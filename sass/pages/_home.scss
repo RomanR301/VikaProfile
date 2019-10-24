@@ -1,0 +1,47 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.primary-screen {
+  position: relative;
+  height: calc(100vh - 200px);
+  &-carousel {
+    &__item {
+      padding-top: 70px;
+      width: 100%;
+    }
+  }
+  &__description {
+    padding-top: 36px;
+    width: 80%;
+  }
+  &__details {
+    padding-top: 32px;
+  }
+  &__quantity {
+    margin-right: 20px;
+  }
+  &__new-price {
+    margin-right: 20px;
+  }
+  &__old-price {
+    margin-right: 20px;
+  }
+  &__add {
+    padding-top: 32px;
+  }
+  &__background {
+    background: $blueColor;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  &__icon {
+    position: absolute;
+    left: -50%;
+    top: 8%;
+  }
+
+}

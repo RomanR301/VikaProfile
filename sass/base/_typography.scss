@@ -1,0 +1,115 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.--light {
+  font-weight: 300;
+}
+
+.--regular {
+  font-weight: 400;
+}
+
+.--medium {
+  font-weight: 500;
+}
+
+.--bold {
+  font-weight: 700;
+}
+.--heavy{
+  font-weight: 900;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gotham', sans-serif;
+}
+
+.heading-1 {
+  @include fontSize(40, 64);
+  line-height: 61px;
+}
+
+.heading-2 {
+  @include fontSize(24, 36);
+  line-height: 38px;
+}
+
+.heading-3 {
+  @include fontSize(20, 24);
+  line-height: 36px;
+}
+
+.heading-4 {
+  @include fontSize(14, 18);
+  line-height: 22px
+}
+
+.heading-5 {
+  @include fontSize(12, 16);
+  line-height: 24px;
+}
+
+.heading-6 {
+  @include fontSize(10, 14);
+}
+
+.icon-quote:before {
+  content: "\e900";
+}
+.icon-arrow-left-white:before {
+  content: "\e901";
+  color: #dadada;
+}
+.icon-arrow-right-white:before {
+  content: "\e902";
+  color: #dadada;
+}
+.icon-arrow-blue:before {
+  content: "\e903";
+  color: #0993be;
+}
+.icon-clock:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-main-phone:before {
+  content: "\e905";
+}
+.icon-contacts-email:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-cart:before {
+  content: "\e907";
+}
+.icon-close:before {
+  content: "\e909";
+}
+.icon-contacts-phone:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-instagram:before {
+  content: "\e90b";
+  color: #fff;
+}
+.icon-facebook:before {
+  content: "\e90c";
+  color: #fff;
+}
+.footer-input:before {
+  content: "";
+  background-image: url("../../img/footer.input.svg");
+}

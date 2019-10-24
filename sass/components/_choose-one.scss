@@ -1,0 +1,31 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.choose-one {
+  display: inline-block;
+  & ul {
+    display: flex;
+  }
+  & li {
+    margin-right: 12px;
+  }
+  & span {
+    color: $defaultTextColor;
+    border: 1px solid $blueColor;
+    padding: 4px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all .2s ease;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  
+  & input {
+    display: none;  
+  }
+  
+  & input:checked + span {
+    background:#009ACE;
+    color:#fff;
+  }
+}

@@ -1,0 +1,63 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.default-icon {
+  width: 100%;
+
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+.--relative {
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  display: block;
+}
+
+.overlap {
+  position: relative;
+  z-index: 2;
+}
+
+
+.full-height, body, html {
+  height: 100%;
+}
+
+
+.body-padding {
+  height: 198px;
+}
+
+// @media (max-width: $breakpoint-lg) {
+//   .body-padding {
+//     height: 62px
+//   }
+// }
+
+.preventScrolling {
+  overflow: hidden;
+}
+
+.carousel {
+  opacity: 0;
+
+  &.loadSlider {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.--percent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  line-height: 12px;
+  color: #fff;
+  background: $redColor;
+  border-radius: 100px;
+  width: 46px;
+  height: 16px;
+}
+
+.--new-price {
+  @include fontSize(24, 36);
+  line-height: 34px;
+  color: $redColor;
+}
+
+.--old-price {
+  color: $greyColor;
+  text-decoration: line-through;
+  line-height: 26px;
+}
+
+.--discount {
+  background: $redColor;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75px;
+  height: 25px;
+  border-radius: 5px 0px 0px 0px;
+  color: $whiteColor;
+  font-size: 10px;
+  line-height: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:before {
+    content: 'Акція'
+  }
+}
+
+.--new {
+  background: $greenColor;
+}
+
+.--popular {
+  background: $blueColor;
+}
+.section-heading {
+  margin-top: 60px;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  position: relative;
+  &:before {
+    content: '';
+    background: rgba(0, 172, 226, 0.7);
+    position: absolute;
+    height: 8px;
+    width: 100%;
+    bottom: 5px;
+    z-index: -1;
+  }
+}
