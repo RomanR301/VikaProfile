@@ -1,31 +1,41 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.choose-one {
+.select-one {
   display: inline-block;
-  & ul {
+  max-width: 56%;
+  &-list {
     display: flex;
+    flex-wrap: wrap;
+    &__item {
+      margin: 0 12px 12px 0;
+    }
   }
-  & li {
-    margin-right: 12px;
-  }
-  & span {
-    color: $defaultTextColor;
-    border: 1px solid $blueColor;
-    padding: 4px 24px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all .2s ease;
-    font-size: 16px;
-    line-height: 24px;
-  }
-  
-  & input {
+  & .form-radio {
     display: none;  
-  }
-  
-  & input:checked + span {
-    background:#009ACE;
-    color:#fff;
+    &-number {
+      color: $defaultTextColor;
+      border: 1px solid $blueColor;
+      padding: 4px 24px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: all .2s ease;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &:checked + .form-radio-number {
+      background:#009ACE;
+      color:#fff;
+    }
   }
 }
+
+@media(max-width: $breakpoint-lg) {
+  .select-one {
+    max-width: 100%;
+  }
+  .form-radio-number {
+    padding: 4px 20px;
+  }
+}
+

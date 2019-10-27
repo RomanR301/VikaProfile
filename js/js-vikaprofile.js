@@ -1,4 +1,6 @@
 let front = {
+  hamburger: $('.hamburger'),
+  nav: $('.navbar'),
   categoriesHam: $('.categories-hamburger'),
   filterList: $('.categories-container'),
   slider_options_default: {
@@ -18,7 +20,16 @@ let front = {
     // let carousel = new Flickity(document.querySelector(selector), options);
     return new Flickity(document.querySelector(selector), options);
   },
-  toggleNav: function() {
+  toggleNav: function () {
+    if (!this.hamburger.hasClass('open')) {
+        this.hamburger.addClass('open');
+        this.nav.toggleClass('active');
+    } else {
+        this.hamburger.removeClass('open');
+        this.nav.toggleClass('active');
+    }
+  },
+  toggleSideNav: function() {
     this.categoriesHam.hasClass("open") ? (this.categoriesHam.removeClass("open"),
     this.filterList.toggleClass("active")) : (this.categoriesHam.addClass("open"),
     this.filterList.toggleClass("active"))
@@ -29,7 +40,7 @@ let front = {
   events: function() {
     let e = this;
     $(document).on("click", ".categories-hamburger", function() {
-        e.toggleNav()
+        e.toggleSideNav()
     })
   }
 };

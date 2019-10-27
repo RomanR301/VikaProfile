@@ -34,7 +34,7 @@
   &-title {
     padding-bottom: 24px;
   }
-  &-subtitle {
+  &-description {
     width: 72%;
     padding-bottom: 24px;
   }
@@ -44,7 +44,7 @@
       margin-right: 20px;
     }
   }
-  &-weight {
+  &-select {
     padding-bottom: 24px;
   }
   &-image {
@@ -55,6 +55,40 @@
       width: 250px;
       height: 250px;
       object-fit: cover;
+    }
+  }
+}
+
+@media(max-width: $breakpoint-lg) {
+  .banners {
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 46px 15px;
+    }
+    &-image {
+      position: static;
+      padding-bottom: 12px;
+    }
+    &-discount {
+      width: 88px;
+      height: 44px;
+    }
+    &-title {
+      text-align: center;
+      padding-bottom: 8px;
+    }
+    &-description {
+      width: 100%;
+      text-align: center;
+      padding-bottom: 12px;
+    }
+    &-select {
+      padding-bottom: 12px;
+      & span {
+        padding: 4px 16px;
+      }
     }
   }
 }

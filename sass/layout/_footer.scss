@@ -10,7 +10,7 @@
     padding-bottom: 30px;
   }
   & a {
-    @include transition(.3);
+    @include fontSize(12, 14);
     &:hover, &:hover i:before {
       color: $blueColor;
       @include transition(.3);
@@ -29,33 +29,48 @@
           padding-right: 12px;
         }
       }
-      & a {
-        font-size: 14px;
-        line-height: 20px;
-        
-        &:hover {
-          color: $blueColor;
-        }
-      }
     }
   }
   &-subscribe {
     max-width: 330px;
+    & form {
+      position: relative;
+    }
     &__input {
       width: 100%;
-      padding: 8px 16px;
+      padding: 8px 36px 8px 16px;
       background: transparent;
       border: 1px solid #949494;
       color: $whiteGreyColor;
       border-radius: 5px;
+      // background-image: url("../../img/footer.input.svg");
+      // background-repeat: no-repeat;
+      // background-position: center right 10px;
       &::placeholder {
         color: #949494;
       }
       &:focus {
         border: 1px solid $whiteGreyColor;
         outline: none;
+        filter: brightness(2);
+      }
+      &:focus + .footer-subscribe__submit {
+        filter: brightness(2);
       }
     }
+    &__submit {
+      background: url("../../img/footer.input.svg");
+      border: none;
+      position: absolute;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 100%;
+    }
+
   }
   &-form {
     padding-bottom: 40px;
@@ -82,6 +97,42 @@
           padding-right: 5px;
         }
       }
+    }
+  }
+}
+
+@media(max-width: $breakpoint-lg) {
+  .footer {
+    padding: 30px 0;
+    & .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    &-contacts, &-information, &-catalog, &-subscribe {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__item {
+        padding-bottom: 8px;
+      }
+    }
+    &-title {
+      padding-bottom: 15px;
+    }
+    &-subtitle {
+      text-align: center;
+    }
+    &-form {
+      width: 80%;
+    }
+    &-socials-list__item:last-child {
+      padding: 0;
     }
   }
 }

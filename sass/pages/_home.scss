@@ -4,12 +4,14 @@
 
 .primary-screen {
   position: relative;
-  height: calc(100vh - 200px);
+  height: 100vh;
   &-carousel {
     &__item {
-      padding-top: 70px;
       width: 100%;
     }
+  }
+  &__title {
+    padding-top: 232px;
   }
   &__description {
     padding-top: 36px;
@@ -41,7 +43,70 @@
   &__icon {
     position: absolute;
     left: -50%;
-    top: 8%;
+    bottom: 45px;
+    & img {
+      width: 440px;
+      height: 440px;
+      object-fit: cover;
+    }
   }
-
 }
+
+
+@media(max-width: $breakpoint-md) {
+  .primary-screen {
+    &__title {
+      text-align: center;
+      font-size: 24px;
+      line-height: 28px;
+      padding-top: 114px;
+    }
+    &__description {
+      text-align: center;
+      width: 100%;
+      padding: 8px 15px 26px 15px;
+      font-size: 16px;
+      line-height: 24px;
+    }
+    &__background {
+      display: flex;
+      justify-content: center;
+      position: static;
+      width: 100%;
+      background: none;
+    }
+    &__icon {
+      position: static;
+      width: 70%;
+      & img {
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+      }
+    }
+    &__details {
+      padding-top: 20px;
+      justify-content: center;
+    }
+    &__quantity {
+      width: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 20px;
+    }
+    &__add {
+      text-align: center;
+      padding-top: 16px;
+    }
+    &__carousel {
+      height: 100%;
+    }
+    & .flickity-page-dots {
+      position: absolute;
+      bottom: -25px;
+      text-align: center;
+      padding: 60px 15px 0 15px;
+    }
+  }
+} 

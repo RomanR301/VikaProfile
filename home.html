@@ -23,9 +23,24 @@
 										<li class="menu-item"><a href="#">Оплата та доставка</a></li>
 										<li class="menu-item"><a href="#">Новини</a></li>
 										<li class="menu-item"><a href="#">Контакти</a></li>
+										<li class="menu-item">
+											<div class="header-search">
+												<form action="" method="post" class="search">
+													<input class="header-search-input" type="search" name="search" placeholder="Пошук" />
+													<button class="header-search-btn" type="submit">
+														<i class="icon-search"><img src="/img/search.svg" alt=""/></i>
+													</button>
+												</form>
+											</div>
+										</li>
 									</ul>
 								</div>
 							</nav>
+						</div>
+						<div class="hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
 						</div>
 					</div>
 					<div class="header-column">
@@ -109,7 +124,7 @@
 									<div class="categories-container">
 										<div class="categories-filter">
 											<div class="categories-filter__title">
-												<span class="section-heading">Каталог</span>
+												<div class="section-heading heading-3 --medium">Каталог</div>
 											</div>
 											<div class="categories-filter__subtitle heading-4 --medium">
 												Категорії
@@ -203,19 +218,27 @@
 				</div>
 			</div>
 		</header>
-		<div class="body-padding"></div>
 		<section class="primary-screen">
 			<div class="primary-screen-carousel carousel full-height">
 				<div class="primary-screen-carousel__item full-height">
 					<div class="container primary-screen__container full-height">
 						<div class="row">
-							<div class="col-md-5 col-sm-5 col-xs-12">
+							<div class="col-md-5 col-sm-12 col-xs-12">
 								<div class="primary-screen__title heading-1 --medium">
 									Клеюча суміш Ceresit
 								</div>
 								<div class="primary-screen__description heading-5">
 									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 								</div>
+							</div>
+							<div class="col-md-7 col-sm-12 col-xs-12">
+								<div class="primary-screen__background">
+									<div class="primary-screen__icon default-icon">
+										<img src="/img/main-carousel-image.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
 									<div class="primary-screen__quantity input-number-wrapper">
 										<button class="quantity-arrow-minus">-</button>
@@ -230,9 +253,40 @@
 									<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
 								</div>
 							</div>
-							<div class="primary-screen__background">
-								<div class="primary-screen__icon">
-									<img src="/img/main-carousel-image.png" alt="" />
+						</div>
+					</div>
+				</div>
+				<div class="primary-screen-carousel__item full-height">
+					<div class="container primary-screen__container full-height">
+						<div class="row">
+							<div class="col-md-5 col-sm-12 col-xs-12">
+								<div class="primary-screen__title heading-1 --medium">
+									Клеюча суміш Ceresit
+								</div>
+								<div class="primary-screen__description heading-5">
+									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
+								</div>
+							</div>
+							<div class="col-md-7 col-sm-12 col-xs-12">
+								<div class="primary-screen__background">
+									<div class="primary-screen__icon default-icon">
+										<img src="/img/main-carousel-image.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12 col-xs-12">
+								<div class="primary-screen__details d-flex align-middle">
+									<div class="primary-screen__quantity input-number-wrapper">
+										<button class="quantity-arrow-minus">-</button>
+										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
+										<button class="quantity-arrow-plus">+</button>
+									</div>
+									<div class="primary-screen__new-price --new-price">124 грн</div>
+									<div class="primary-screen__old-price --old-price">156 грн</div>
+									<div class="primary-screen__discount --percent">-26%</div>
+								</div>
+								<div class="primary-screen__add">
+									<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
 								</div>
 							</div>
 						</div>
@@ -241,62 +295,34 @@
 				<div class="primary-screen-carousel__item full-height">
 					<div class="container primary-screen__container full-height">
 						<div class="row">
-							<div class="col-md-5 col-sm-5 col-xs-12">
+							<div class="col-md-5 col-sm-12 col-xs-12">
 								<div class="primary-screen__title heading-1 --medium">
 									Клеюча суміш Ceresit
 								</div>
 								<div class="primary-screen__description heading-5">
 									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 								</div>
+							</div>
+							<div class="col-md-7 col-sm-12 col-xs-12">
+								<div class="primary-screen__background">
+									<div class="primary-screen__icon default-icon">
+										<img src="/img/main-carousel-image.png" alt="" />
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
 									<div class="primary-screen__quantity input-number-wrapper">
 										<button class="quantity-arrow-minus">-</button>
 										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
 										<button class="quantity-arrow-plus">+</button>
 									</div>
-									<div class="primary-screen__new-price heading-2">124 грн</div>
-									<div class="primary-screen__old-price">156 грн</div>
+									<div class="primary-screen__new-price --new-price">124 грн</div>
+									<div class="primary-screen__old-price --old-price">156 грн</div>
 									<div class="primary-screen__discount --percent">-26%</div>
 								</div>
 								<div class="primary-screen__add">
 									<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
-								</div>
-							</div>
-							<div class="primary-screen__background">
-								<div class="primary-screen__icon">
-									<img src="/img/main-carousel-image.png" alt="" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="primary-screen-carousel__item full-height">
-					<div class="container primary-screen__container full-height">
-						<div class="row">
-							<div class="col-md-5 col-sm-5 col-xs-12">
-								<div class="primary-screen__title heading-1 --medium">
-									Клеюча суміш Ceresit
-								</div>
-								<div class="primary-screen__description heading-5">
-									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
-								</div>
-								<div class="primary-screen__details d-flex align-middle">
-									<div class="primary-screen__quantity input-number-wrapper">
-										<button class="quantity-arrow-minus">-</button>
-										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
-										<button class="quantity-arrow-plus">+</button>
-									</div>
-									<div class="primary-screen__new-price heading-2">124 грн</div>
-									<div class="primary-screen__old-price">156 грн</div>
-									<div class="primary-screen__discount --percent">-26%</div>
-								</div>
-								<div class="primary-screen__add">
-									<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
-								</div>
-							</div>
-							<div class="primary-screen__background">
-								<div class="primary-screen__icon">
-									<img src="/img/main-carousel-image.png" alt="" />
 								</div>
 							</div>
 						</div>
@@ -307,12 +333,12 @@
 		<section class="products-component">
 			<div class="container">
 				<div class="row">
-					<span class="section-heading">Акційна продукція</span>
+					<div class="section-heading heading-3 --medium">Акційна продукція</div>
 				</div>
 				<div class="home-first-slider carousel">
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -321,7 +347,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -331,14 +357,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -347,7 +373,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -357,14 +383,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -373,7 +399,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -383,14 +409,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -399,7 +425,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -409,14 +435,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -425,7 +451,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -433,14 +459,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -449,7 +475,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -457,14 +483,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -473,7 +499,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -481,7 +507,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -492,7 +518,7 @@
 		<section class="banners">
 			<div class="container">
 				<div class="m-row row">
-					<div class="column col-md-6">
+					<div class="column mb-20 col-md-6 col-sm-12">
 						<div class="banners-item">
 							<div class="banners-discount">
 								<div class="banners-discount__amount">
@@ -506,31 +532,34 @@
 								<div class="banners-title__category heading-2 --medium">Клеюча суміш</div>
 								<div class="banners-title__item heading-2 --medium">Ceresit</div>
 							</div>
-							<div class="banners-subtitle heading-5">
+							<div class="banners-description heading-5">
 								Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
+							</div>
+							<div class="banners-image">
+								<img src="/img/banners/banner1.png" alt="" />
 							</div>
 							<div class="banners-price d-flex align-end">
 								<div class="banners-price__new heading-2 --new-price">123 грн</div>
 								<div class="banners-price__old heading-3 --old-price">158 грн</div>
 							</div>
-							<div class="banners-weight choose-one">
-								<ul>
-									<li>
+							<div class="banners-select select-one">
+								<ul class="select-one-list">
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" checked />
-											<span>5 кг</span>
+											<input type="radio" value="" class="form-radio" name="" checked />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" />
-											<span>10 кг</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" />
-											<span>25 кг</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
 								</ul>
@@ -538,12 +567,9 @@
 							<div class="banners-button">
 								<a class="btn btn-transparent" href="#">Переглянути</a>
 							</div>
-							<div class="banners-image">
-								<img src="/img/banners/banner1.png" alt="" />
-							</div>
 						</div>
 					</div>
-					<div class="column col-md-6">
+					<div class="column mb-20 col-md-6 col-sm-12">
 						<div class="banners-item">
 							<div class="banners-discount">
 								<div class="banners-discount__amount">
@@ -557,40 +583,40 @@
 								<div class="banners-title__category heading-2 --medium">Клеюча суміш</div>
 								<div class="banners-title__item heading-2 --medium">Ceresit</div>
 							</div>
-							<div class="banners-subtitle heading-5">
+							<div class="banners-description heading-5">
 								Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 							</div>
-							<div class="banners-price d-flex align-end">
-								<div class="banners-price__new heading-2 --new-price">146 грн</div>
-								<div class="banners-price__old heading-3 --old-price">224 грн</div>
+							<div class="banners-image">
+								<img src="/img/banners/banner1.png" alt="" />
 							</div>
-							<div class="banners-weight choose-one">
-								<ul>
-									<li>
+							<div class="banners-price d-flex align-end">
+								<div class="banners-price__new heading-2 --new-price">123 грн</div>
+								<div class="banners-price__old heading-3 --old-price">158 грн</div>
+							</div>
+							<div class="banners-select select-one">
+								<ul class="select-one-list">
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" checked />
-											<span>2 л</span>
+											<input type="radio" value="" class="form-radio" name="" checked />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" />
-											<span>5 л</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" />
-											<span>10 л</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
 								</ul>
 							</div>
 							<div class="banners-button">
 								<a class="btn btn-transparent" href="#">Переглянути</a>
-							</div>
-							<div class="banners-image">
-								<img src="/background-purple.jpg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -600,12 +626,12 @@
 		<section class="products-component">
 			<div class="container">
 				<div class="row">
-					<span class="section-heading">Звукоізоляційні матеріали</span>
+					<div class="section-heading heading-3 --medium">Звукоізоляційні матеріали</div>
 				</div>
 				<div class="home-second-slider carousel">
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -614,7 +640,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -624,7 +650,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -640,7 +666,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -648,7 +674,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -664,7 +690,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -672,14 +698,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -688,7 +714,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -698,14 +724,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -714,7 +740,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -724,7 +750,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -740,7 +766,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (51 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -748,7 +774,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -764,7 +790,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -772,7 +798,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -783,7 +809,7 @@
 		<section class="products-component">
 			<div class="container">
 				<div class="row">
-					<span class="section-heading">Герметики</span>
+					<div class="section-heading heading-3 --medium">Герметики</div>
 				</div>
 				<div class="home-third-slider carousel">
 					<div class="products-carousel__item">
@@ -797,7 +823,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -805,7 +831,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -821,7 +847,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -829,7 +855,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -845,7 +871,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -853,7 +879,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -869,7 +895,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -877,14 +903,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -893,7 +919,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -903,7 +929,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -919,7 +945,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (51 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -927,7 +953,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -943,7 +969,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -951,7 +977,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -962,7 +988,7 @@
 		<section class="banners">
 			<div class="container">
 				<div class="m-row row">
-					<div class="column col-md-6">
+					<div class="column mb-20 col-md-6 col-sm-12">
 						<div class="banners-item">
 							<div class="banners-discount">
 								<div class="banners-discount__amount">
@@ -976,31 +1002,34 @@
 								<div class="banners-title__category heading-2 --medium">Клеюча суміш</div>
 								<div class="banners-title__item heading-2 --medium">Ceresit</div>
 							</div>
-							<div class="banners-subtitle heading-5">
+							<div class="banners-description heading-5">
 								Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
+							</div>
+							<div class="banners-image">
+								<img src="/img/banners/banner1.png" alt="" />
 							</div>
 							<div class="banners-price d-flex align-end">
 								<div class="banners-price__new heading-2 --new-price">123 грн</div>
 								<div class="banners-price__old heading-3 --old-price">158 грн</div>
 							</div>
-							<div class="banners-weight choose-one">
-								<ul>
-									<li>
+							<div class="banners-select select-one">
+								<ul class="select-one-list">
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" checked />
-											<span>5 кг</span>
+											<input type="radio" value="" class="form-radio" name="" checked />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" />
-											<span>10 кг</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="weight" />
-											<span>25 кг</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
 								</ul>
@@ -1008,12 +1037,9 @@
 							<div class="banners-button">
 								<a class="btn btn-transparent" href="#">Переглянути</a>
 							</div>
-							<div class="banners-image">
-								<img src="/img/banners/banner1.png" alt="" />
-							</div>
 						</div>
 					</div>
-					<div class="column col-md-6">
+					<div class="column mb-20 col-md-6 col-sm-12">
 						<div class="banners-item">
 							<div class="banners-discount">
 								<div class="banners-discount__amount">
@@ -1027,40 +1053,40 @@
 								<div class="banners-title__category heading-2 --medium">Клеюча суміш</div>
 								<div class="banners-title__item heading-2 --medium">Ceresit</div>
 							</div>
-							<div class="banners-subtitle heading-5">
+							<div class="banners-description heading-5">
 								Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 							</div>
-							<div class="banners-price d-flex align-end">
-								<div class="banners-price__new heading-2 --new-price">146 грн</div>
-								<div class="banners-price__old heading-3 --old-price">224 грн</div>
+							<div class="banners-image">
+								<img src="/img/banners/banner1.png" alt="" />
 							</div>
-							<div class="banners-weight choose-one">
-								<ul>
-									<li>
+							<div class="banners-price d-flex align-end">
+								<div class="banners-price__new heading-2 --new-price">123 грн</div>
+								<div class="banners-price__old heading-3 --old-price">158 грн</div>
+							</div>
+							<div class="banners-select select-one">
+								<ul class="select-one-list">
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" checked />
-											<span>2 л</span>
+											<input type="radio" value="" class="form-radio" name="" checked />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" />
-											<span>5 л</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
-									<li>
+									<li class="select-one-list__item">
 										<label>
-											<input type="radio" value="" name="amount" />
-											<span>10 л</span>
+											<input type="radio" value="" class="form-radio" name="" />
+											<span class="form-radio-number">5 кг</span>
 										</label>
 									</li>
 								</ul>
 							</div>
 							<div class="banners-button">
 								<a class="btn btn-transparent" href="#">Переглянути</a>
-							</div>
-							<div class="banners-image">
-								<img src="/background-purple.jpg" alt="" />
 							</div>
 						</div>
 					</div>
@@ -1070,7 +1096,7 @@
 		<section class="products-component">
 			<div class="container">
 				<div class="row">
-					<span class="section-heading">Герметики</span>
+					<div class="section-heading heading-3 --medium">Герметики</div>
 				</div>
 				<div class="home-fourth-slider products-carousel carousel">
 					<div class="products-carousel__item">
@@ -1084,7 +1110,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -1092,7 +1118,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1108,7 +1134,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -1116,7 +1142,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1132,7 +1158,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -1140,7 +1166,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1156,7 +1182,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -1164,14 +1190,14 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
 					</div>
 					<div class="products-carousel__item">
 						<div class="product">
-							<div class="products-item__badge --discount"></div>
+							<span class="products-item__badge --onsale">Акція</span>
 							<figure>
 								<div class="product-photo default-icon">
 									<img src="/img/products/product1.png" alt="product icon" />
@@ -1180,7 +1206,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -1190,7 +1216,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1206,7 +1232,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (51 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price d-flex align-middle">
@@ -1214,7 +1240,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1230,7 +1256,7 @@
 									<div class="product-title">
 										Грунтовка Ceresit (5 л)
 									</div>
-									<div class="product-subtitle">
+									<div class="product-code">
 										Артикул: 25436587
 									</div>
 									<div class="product-price">
@@ -1238,7 +1264,7 @@
 									</div>
 								</figcaption>
 								<div class="product-button">
-									<a href="#"></a>
+									<a href="#"><span>Переглянути</span></a>
 								</div>
 							</figure>
 						</div>
@@ -1271,13 +1297,13 @@
 						</div>
 						<ul class="footer-list">
 							<li class="footer-list__item">
-								<i class="icon-contacts-phone"><a href="tel:+380932254352">+380 (93) 225 43 52</a></i>
+								<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>+380 (93) 225 43 52</a>
 							</li>
 							<li class="footer-list__item">
-								<i class="icon-contacts-phone"><a href="tel:+380973355211">+380 (97) 335 52 11</a></i>
+								<a href="tel:+380973355211"> <i class="icon-contacts-phone"></i>+380 (97) 335 52 11</a>
 							</li>
 							<li class="footer-list__item">
-								<i class="icon-contacts-email"><a href="mailto:info@vikaprofile.com">info@vikaprofile.com</a></i>
+								<a href="mailto:info@vikaprofile.com"> <i class="icon-contacts-email"></i>info@vikaprofile.com</a>
 							</li>
 							<li class="footer-list__item"><i class="icon-clock">Пн. - Пт. з 08:00 - 20:00</i></li>
 						</ul>
@@ -1316,7 +1342,7 @@
 						<div class="footer-form">
 							<form action="">
 								<input type="email" class="footer-subscribe__input" name="subscribe-email" id="" placeholder="Ваш e-mail" />
-								<i class="footer-input"></i>
+								<input type="submit" class="footer-subscribe__submit" value="">
 							</form>
 						</div>
 						<div class="footer-title heading-4">
@@ -1336,6 +1362,7 @@
 				</div>
 			</div>
 		</footer>
+
 		<script src="js/libs/jquery-3.4.1.js"></script>
 		<script src="js/libs/flickity.pkgd.min.js"></script>
 		<script src="js/sliders.js"></script>

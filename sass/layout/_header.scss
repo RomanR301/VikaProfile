@@ -14,18 +14,23 @@
     background: $blueColor;
     color: #fff;
     padding: 8px 0 9px 0;
-    & .menu-item {
-      margin-right: 36px;
-      @include transition(.3);
-      &:hover {
-        color: #8CE3FF;
+    & .menu {
+      &-item {
+        margin-right: 36px;
+        @include transition(.3);
+        &:hover {
+          color: #8CE3FF;
+        }
+        & a {
+          @include fontSize(12, 16);
+        }
+        &.current-menu-item {
+          color: #8CE3FF;
+        }
       }
-      & a {
-        @include fontSize(12, 16);
-      }
-      &.current-menu-item {
-        color: #8CE3FF;
-      }
+    }
+    & .header-search {
+      display: none;
     }
   }
   &-lang {
@@ -270,6 +275,55 @@
   }
 }
 
+.hamburger {
+  position: absolute;
+  top: 14px;
+  right: 22px;
+  width: 15px;
+  height: 15px;
+  & span {
+    position: absolute;
+    display: block;
+    height: 2px;
+    background: $whiteColor;
+    width: 20px;
+    left: 0;
+    border-radius: 10px;
+    @include transition(0.3);
+
+    &:nth-child(1) {
+      top: 0;
+    }
+
+    &:nth-child(2) {
+      top: 4px;
+    }
+
+    &:nth-child(3) {
+      top: 8px;
+    }
+  }
+  &.open {
+    & span {
+      &:nth-child(1) {
+        top: 9px;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+      }
+
+      &:nth-child(2) {
+        background: transparent;
+      }
+
+      &:nth-child(3) {
+        top: 9px;
+        -webkit-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
+}
+
 .header-lines {
   position: relative;
   &:before, &:after {
@@ -332,9 +386,35 @@
   }
 }
 
-
-
-.main {
-  height: 3000px;
+@media(max-width: $breakpoint-md) {
+  .header {
+    &-top {
+      // & .header-search {
+      //   display: block;
+      //   width: 100%;
+      // }
+      // & .menu {
+      //   position: absolute;
+      //   top: 27px;
+      //   left: 0;
+      //   width: 100%;
+      //   background: $blueColor;
+      //   z-index: 999;
+        
+      //   &-item {
+      //     display: block;
+      //     width: 100%;
+      //     text-align: center;
+      //     margin: 0;
+      //     padding: 10px;
+      //     & a {
+      //       @include fontSize(16, 20)
+      //     }
+      //   }
+      // }
+    }
+    &-search {
+      display: none;
+    }
+  }
 }
-
