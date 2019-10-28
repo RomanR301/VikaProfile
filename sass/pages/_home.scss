@@ -4,14 +4,14 @@
 
 .primary-screen {
   position: relative;
-  height: 100vh;
+  height: calc(100vh - 200px);
   &-carousel {
     &__item {
       width: 100%;
     }
   }
   &__title {
-    padding-top: 232px;
+    padding-top: 70px;
   }
   &__description {
     padding-top: 36px;
@@ -42,7 +42,7 @@
   }
   &__icon {
     position: absolute;
-    left: -50%;
+    left: 50%;
     bottom: 45px;
     & img {
       width: 440px;
@@ -53,13 +53,14 @@
 }
 
 
-@media(max-width: $breakpoint-md) {
+@media(max-width: $breakpoint-lg) {
   .primary-screen {
+    height: calc(100vh - 40px);
     &__title {
       text-align: center;
       font-size: 24px;
       line-height: 28px;
-      padding-top: 114px;
+      padding-top: 16px;
     }
     &__description {
       text-align: center;
@@ -77,7 +78,7 @@
     }
     &__icon {
       position: static;
-      width: 70%;
+      width: 100%;
       & img {
         margin: 0 auto;
         width: 200px;
@@ -98,9 +99,6 @@
     &__add {
       text-align: center;
       padding-top: 16px;
-    }
-    &__carousel {
-      height: 100%;
     }
     & .flickity-page-dots {
       position: absolute;

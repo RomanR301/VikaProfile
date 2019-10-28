@@ -3,6 +3,7 @@ let front = {
   nav: $('.navbar'),
   categoriesHam: $('.categories-hamburger'),
   filterList: $('.categories-container'),
+  body: $('body'),
   slider_options_default: {
     wrapAround: true,
     pageDots: false,
@@ -34,14 +35,21 @@ let front = {
     this.filterList.toggleClass("active")) : (this.categoriesHam.addClass("open"),
     this.filterList.toggleClass("active"))
   },
+  bodyPreventScrolling: function() {
+    this.body.toggleClass('preventScrolling');
+  },
   headerScroll: function() {
     $(window).scrollTop() > 5 ? $(".header").addClass("fixed") : $(".header").removeClass("fixed")
   },
   events: function() {
     let e = this;
     $(document).on("click", ".categories-hamburger", function() {
-        e.toggleSideNav()
-    })
+      e.toggleSideNav()
+    }),
+    $(document).on('click', '.hamburger', function () {
+      e.toggleNav();
+      e.bodyPreventScrolling();
+    });
   }
 };
 

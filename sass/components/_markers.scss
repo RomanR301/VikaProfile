@@ -51,3 +51,20 @@
 .--popular {
   background: $blueColor;
 }
+
+.nav-sale {
+  position: absolute;
+  right: -40px;
+  top: -3px;
+  font-size: 10px;
+  line-height: 10px;
+  width: 39px;
+  height: 13px;
+  background: #DA2F2F;
+  border-radius: 100px;
+  color: #fff;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

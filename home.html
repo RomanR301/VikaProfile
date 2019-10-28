@@ -13,6 +13,9 @@
 		<header class="header">
 			<div class="header-top">
 				<div class="container d-flex align-justify">
+					<div class="header-top-logo">
+						<a href="#">ВІКА-ПРОФІЛЬ</a>
+					</div>
 					<div class="header-column">
 						<div class="navbar">
 							<nav class="primary-navigation">
@@ -23,18 +26,32 @@
 										<li class="menu-item"><a href="#">Оплата та доставка</a></li>
 										<li class="menu-item"><a href="#">Новини</a></li>
 										<li class="menu-item"><a href="#">Контакти</a></li>
-										<li class="menu-item">
-											<div class="header-search">
-												<form action="" method="post" class="search">
-													<input class="header-search-input" type="search" name="search" placeholder="Пошук" />
-													<button class="header-search-btn" type="submit">
-														<i class="icon-search"><img src="/img/search.svg" alt=""/></i>
-													</button>
-												</form>
-											</div>
+									</ul>
+									<ul class="menu-mobile">
+										<li class="menu-mobile__item">
+											<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>380 (93) 225 43 52</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="tel:+380973355211"><i class="icon-contacts-phone"></i>38 (097) 335 52 11</a>
+										</li>
+										<li class="menu-mobile__item">
+											<a href="mailto:info@vikaprofile.com"> <i class="icon-contacts-email"></i>info@vikaprofile.com</a>
+										</li>
+										<li class="menu-mobile__item">
+											<span><i class="icon-clock"></i>Пн. - Пт. з 08:00 - 20:00</span>
+										</li>
+										<li class="menu-mobile__item">
+											<button class="btn btn-primary">Замовити дзвінок</button>
 										</li>
 									</ul>
 								</div>
+								<!-- <div class="header-lang">
+									<input class="checkbox" id="checkbox1" type="checkbox" />
+									<label for="checkbox1" class="checkbox-label">
+										<span class="ua">РУС</span>
+										<span class="ru">УКР</span>
+									</label>
+								</div> -->
 							</nav>
 						</div>
 						<div class="hamburger">
@@ -110,7 +127,7 @@
 			<div class="header-bottom">
 				<div class="container">
 					<div class="row header-lines">
-						<div class="col-lg-2">
+						<div class="col-lg-2 col-xs-7">
 							<div class="header-column">
 								<div class="categories-dropdown">
 									<div class="categories-hamburger">
@@ -200,12 +217,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-10">
+						<div class="col-lg-10 col-xs-5">
 							<div class="header-column">
 								<div class="categories-navigation">
 									<div class="menu-categories">
 										<ul class="menu">
-											<li class="menu-item"><a href="#">Акції</a></li>
+											<li class="menu-item"><a href="#">Акції</a><span class="nav-sale">sale</span></li>
 											<li class="menu-item"><a href="#">Звукоізоляційні матеріали</a></li>
 											<li class="menu-item"><a href="#">Герметики</a></li>
 											<li class="menu-item"><a href="#">Клеї для плитки</a></li>
@@ -218,12 +235,13 @@
 				</div>
 			</div>
 		</header>
+		<div class="body-padding"></div>
 		<section class="primary-screen">
-			<div class="primary-screen-carousel carousel full-height">
-				<div class="primary-screen-carousel__item full-height">
-					<div class="container primary-screen__container full-height">
+			<div class="primary-screen-carousel carousel">
+				<div class="primary-screen-carousel__item">
+					<div class="container primary-screen__container">
 						<div class="row">
-							<div class="col-md-5 col-sm-12 col-xs-12">
+							<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__title heading-1 --medium">
 									Клеюча суміш Ceresit
 								</div>
@@ -231,14 +249,12 @@
 									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-12 col-xs-12">
-								<div class="primary-screen__background">
-									<div class="primary-screen__icon default-icon">
-										<img src="/img/main-carousel-image.png" alt="" />
-									</div>
+							<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+								<div class="primary-screen__icon default-icon">
+									<img src="/img/main-carousel-image.png" alt="" />
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
 									<div class="primary-screen__quantity input-number-wrapper">
 										<button class="quantity-arrow-minus">-</button>
@@ -256,10 +272,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="primary-screen-carousel__item full-height">
-					<div class="container primary-screen__container full-height">
+				<div class="primary-screen-carousel__item">
+					<div class="container primary-screen__container">
 						<div class="row">
-							<div class="col-md-5 col-sm-12 col-xs-12">
+							<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__title heading-1 --medium">
 									Клеюча суміш Ceresit
 								</div>
@@ -267,50 +283,12 @@
 									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
 								</div>
 							</div>
-							<div class="col-md-7 col-sm-12 col-xs-12">
-								<div class="primary-screen__background">
-									<div class="primary-screen__icon default-icon">
-										<img src="/img/main-carousel-image.png" alt="" />
-									</div>
+							<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+								<div class="primary-screen__icon default-icon">
+									<img src="/img/main-carousel-image.png" alt="" />
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-12 col-xs-12">
-								<div class="primary-screen__details d-flex align-middle">
-									<div class="primary-screen__quantity input-number-wrapper">
-										<button class="quantity-arrow-minus">-</button>
-										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
-										<button class="quantity-arrow-plus">+</button>
-									</div>
-									<div class="primary-screen__new-price --new-price">124 грн</div>
-									<div class="primary-screen__old-price --old-price">156 грн</div>
-									<div class="primary-screen__discount --percent">-26%</div>
-								</div>
-								<div class="primary-screen__add">
-									<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="primary-screen-carousel__item full-height">
-					<div class="container primary-screen__container full-height">
-						<div class="row">
-							<div class="col-md-5 col-sm-12 col-xs-12">
-								<div class="primary-screen__title heading-1 --medium">
-									Клеюча суміш Ceresit
-								</div>
-								<div class="primary-screen__description heading-5">
-									Призначена для облицювання бетонних, цегляних, цементно-піщаних і цементно-вапняних поверхонь плиткою з водопоглинанням не менше 1%
-								</div>
-							</div>
-							<div class="col-md-7 col-sm-12 col-xs-12">
-								<div class="primary-screen__background">
-									<div class="primary-screen__icon default-icon">
-										<img src="/img/main-carousel-image.png" alt="" />
-									</div>
-								</div>
-							</div>
-							<div class="col-md-4 col-sm-12 col-xs-12">
+							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
 									<div class="primary-screen__quantity input-number-wrapper">
 										<button class="quantity-arrow-minus">-</button>
@@ -329,6 +307,7 @@
 					</div>
 				</div>
 			</div>
+			<div class="primary-screen__background"></div>
 		</section>
 		<section class="products-component">
 			<div class="container">
@@ -1342,7 +1321,7 @@
 						<div class="footer-form">
 							<form action="">
 								<input type="email" class="footer-subscribe__input" name="subscribe-email" id="" placeholder="Ваш e-mail" />
-								<input type="submit" class="footer-subscribe__submit" value="">
+								<input type="submit" class="footer-subscribe__submit" value="" />
 							</form>
 						</div>
 						<div class="footer-title heading-4">
