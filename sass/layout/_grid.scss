@@ -45,6 +45,14 @@
   }
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
 .p-0 {
   padding: 0 !important;
   @media (max-width: $breakpoint-sm) {
@@ -62,6 +70,10 @@
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mb-54 {
+  margin-bottom: 54px;
 }
 
 

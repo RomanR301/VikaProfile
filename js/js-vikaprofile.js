@@ -1,3 +1,5 @@
+
+
 let front = {
   hamburger: $('.hamburger'),
   nav: $('.navbar'),
@@ -68,6 +70,12 @@ jQuery(function() {
       e = !1)
   }, 250)
 })
+
+
+$(function(){
+  $(".header").load("header.html");
+  $(".footer").load("footer.html");
+});
 
 
 // let front = {
@@ -318,9 +326,6 @@ jQuery(function() {
 //   });
 // });
 
-// $(function(){
-//   $("#header").load("header.html");
-//   $("#footer").load("footer.html");
-// });
+
 
 

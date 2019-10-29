@@ -2,7 +2,7 @@
 @import "../abstracts/variables";
 
 .footer {
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   background: #333333;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
   color: $whiteColor;
@@ -11,6 +11,7 @@
   }
   & a {
     @include fontSize(12, 14);
+    @include transition(.3);
     &:hover, &:hover i:before {
       color: $blueColor;
       @include transition(.3);
@@ -99,11 +100,26 @@
       }
     }
   }
+  &-copyright {
+    padding: 60px 0 25px 0;
+    width: 100%;
+    & a {
+      &:hover {
+        color: $whiteColor;
+      }
+      &:hover b {
+        color: $blueColor;
+      }
+    }
+    & b {
+      @include transition(.3);
+    }
+  }
 }
 
 @media(max-width: $breakpoint-lg) {
   .footer {
-    padding: 30px 0;
+    padding: 30px 0 0 0;
     & .row {
       flex-direction: column;
       align-items: center;
@@ -133,6 +149,10 @@
     }
     &-socials-list__item:last-child {
       padding: 0;
+    }
+    &-copyright {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

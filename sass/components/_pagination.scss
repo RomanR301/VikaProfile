@@ -1,0 +1,53 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.pagination {
+  margin: 44px 0 60px 0;
+  & .current {
+    background: $blueColor;
+    color: $whiteColor; 
+    &:hover {
+      background: $blueColor;
+      color: $whiteColor; 
+      border: none;
+    }
+  }
+  & .next, .prev {
+    &:hover {
+      border: none;
+    }
+  }
+  &-mobile {
+    display: none;
+  }
+}
+
+.page-numbers {
+  width: 44px;
+  height: 44px;
+  border-radius: 2px;
+  font-size: 24px;
+  line-height: 36px;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  color: $defaultTextColor;
+  @include transition(.3);
+  &:hover {
+    background: $whiteColor;
+    color: $defaultTextColor; 
+    border: 1px solid #00ACE2;
+  }
+}
+
+@media(max-width: $breakpoint-md) {
+  .pagination-desktop {
+    display: none;
+  }
+  .pagination-mobile {
+    display: block;
+  }
+}

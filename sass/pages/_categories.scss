@@ -1,0 +1,30 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.categories {
+  &-sidenav {
+    position: sticky;
+    padding-bottom: 40px;
+    top: 200px;
+    & .section-heading {
+      margin-top: 34px;
+    }
+  }
+  &-filter {
+    width: 280px;
+    z-index: 99;
+    background: #fff;
+    @include transition(.3);
+    &__subtitle {
+      padding: 4px 0 0 10px;
+      margin-bottom: 10px;
+    }
+    &__items {
+      padding-left: 10px;
+    }
+  }
+  &-products {
+    padding-top: 115px;
+  }
+}

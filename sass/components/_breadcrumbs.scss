@@ -1,0 +1,26 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+.breadcrumb-list {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumb-item {
+  margin-right: 8;
+  & a {
+    color: $greyColor;
+  }
+  &.active {
+    & a {
+      color: $defaultTextColor;
+    }
+  }
+}
+
+.breadcrumb-icon {
+  &:before {
+    content: '/';
+    position: absolute;
+  }
+}

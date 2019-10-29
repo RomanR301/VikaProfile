@@ -9,7 +9,7 @@ jQuery(function () {
   if (primaryScreenCarousel) {
       mainCarousel = front.newSlider('.primary-screen-carousel', {
           cellAlign: 'center',
-          contain: true,
+          contain: false,
           pageDots: true,
           // autoPlay: true,
           // autoPlay: 5000,

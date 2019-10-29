@@ -12,16 +12,21 @@
 @import "components/_forms";
 @import "components/_markers";
 @import "components/_products-carousel";
+@import "components/_single-product";
 @import "components/_banners";
 @import "components/_choose-one";
 @import "components/_seo-component";
 @import "components/_entry-content";
+@import "components/_pagination";
+@import "components/_breadcrumbs";
 // Layout
 @import "layout/_grid";
 @import "layout/_footer";
 @import "layout/_header";
 // Vendor
 @import "vendor/_flickity";
+@import "vendor/_animate";
 // Pages
 @import "pages/_home";
+@import "pages/_categories";
 
