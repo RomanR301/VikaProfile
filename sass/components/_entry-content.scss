@@ -2,9 +2,6 @@
 @import "../abstracts/variables";
 
 .entry-content {
-  font-family: 'Circe', sans-serif;
-  font-weight: normal;
-
   & p {
     @include fontSize(14, 16);
     font-weight: 400;
@@ -13,6 +10,27 @@
     margin-bottom: 24px;
     @media (max-width: $breakpoint-lg) {
       margin-bottom: 16px;
+    }
+  }
+  & a {
+    color: $blueHoverColor;
+    position: relative;
+    font-size: 16px;
+    line-height: 24px;
+    &:after {
+      content: "";
+      position: absolute;
+      background: $blueHoverColor;
+      height: 1px;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      @include transition(.3);
+    }
+    &:hover {
+      &:after {
+        width: 100%;
+      }
     }
   }
 
@@ -82,6 +100,18 @@
         -moz-border-radius: 100%;
         border-radius: 100%;
         background: $blueColor;
+      }
+    }
+  }
+  & ol {
+    & li {
+      font-size: 16px;
+      counter-increment: li;
+      &:before {
+        content: counter(li) '.';
+        color: $blueColor;
+        display: inline-block;
+        padding-right: 5px;
       }
     }
   }

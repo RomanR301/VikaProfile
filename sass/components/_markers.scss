@@ -15,8 +15,6 @@
 }
 
 .--new-price {
-  @include fontSize(24, 36);
-  line-height: 34px;
   color: $redColor;
 }
 

@@ -1,26 +1,36 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
 
-.breadcrumb-list {
-  list-style: none;
-  display: flex;
-}
-
-.breadcrumb-item {
-  margin-right: 8;
-  & a {
-    color: $greyColor;
+.breadcrumb {
+  margin: 40px 0 30px 0;
+  &-list {
+    list-style: none;
+    display: flex;
   }
-  &.active {
+  &-item {
+    margin-right: 8px;
     & a {
-      color: $defaultTextColor;
+      color: $greyColor;
+      &:not(:first-child) {
+        padding-left: 20px;
+      }
+      &:hover {
+        color: $blueColor;
+      }
+    }
+    &.active {
+      & a {
+        color: $defaultTextColor;
+      }
     }
   }
-}
-
-.breadcrumb-icon {
-  &:before {
-    content: '/';
-    position: absolute;
+  &-icon {
+    margin: 0 4px;
+    width: 18px;
+    &:before {
+      content: '/';
+      position: absolute;
+      color: $greyColor;
+    }
   }
 }

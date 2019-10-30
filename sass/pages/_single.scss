@@ -1,0 +1,80 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.single-product {
+  & .product-code {
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__description {
+    margin-bottom: 20px;
+    color: $greyColor;
+  }
+  &__select {
+    padding-bottom: 30px;
+    max-width: 100%;
+    &_size {
+      padding-right: 15px;
+    }
+  }
+  &__details {
+    padding-bottom: 30px;
+    & div {
+      margin-right: 20px;
+    }
+    & .--new-price {
+      color: $defaultTextColor;
+    }
+  }
+  &-tab-description {
+    margin-top: 30px;
+  }
+  & .terms-of-delivery {
+    margin-top: 30px;
+    display: inline-block;
+    background: rgba(0, 172, 226, 0.1);
+    padding: 11px 20px;
+    position: relative;
+    @include transition(.3);
+    &:before {
+      content: "";
+      position: absolute;
+      background: $blueColor;
+      height: 100%;
+      width: 2px;
+      left: 0;
+      top: 0;
+    }
+    &:hover {
+      background: rgba(0, 172, 226, 0.2);
+    }
+  }
+}
+
+.table-wrap {
+  margin-top: 40px;
+  & table {
+    width: 100%;
+  }
+  & td {
+    padding: 8px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+  & tr:nth-child(odd) {
+    background: #F4F4F4;
+    & td:first-child {
+      width: 65%;
+    }
+  }
+  & tr:nth-child(even) {
+    background: $whiteColor;
+  }
+}
+
+
+
