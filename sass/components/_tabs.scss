@@ -4,8 +4,8 @@
 .tabs {
   margin-top: 60px;
   &-list {
-    &-item {
-      &__link {
+    &__item {
+      &_link {
         font-size: 16px;
         line-height: 24px;
         position: relative;
@@ -25,9 +25,9 @@
           }
         }
       }
-      &__link:first-child {
-        margin-right: 30px;
-      }
+    }
+    &__item:first-child {
+      margin-right: 30px;
     }
   }
   &-wrap {
@@ -62,5 +62,21 @@
   display: none;
   @media (max-width: $breakpoint-lg) {
     display: block;
+  }
+}
+
+
+@media(max-width: $breakpoint-md) {
+  .tabs {
+    &-list {
+      &__item:first-child {
+        margin-right: 20px;
+      }
+      &__item {
+        &_link {
+          font-size: 14px;
+        }
+      }
+    }
   }
 }

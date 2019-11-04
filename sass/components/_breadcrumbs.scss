@@ -6,6 +6,7 @@
   &-list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
   }
   &-item {
     margin-right: 8px;
@@ -32,5 +33,11 @@
       position: absolute;
       color: $greyColor;
     }
+  }
+}
+
+@media(max-width: $breakpoint-md) {
+  .breadcrumb {
+    margin: 0 0 30px 0;
   }
 }

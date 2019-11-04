@@ -77,4 +77,22 @@
 }
 
 
+@media(max-width: $breakpoint-md) {
+  .single-product {
+    &__details div {
+      margin-right: 10px;
+    }
+    &-image img {
+      max-height: 300px;
+    }
+    & .input-number {
+      margin: 0 7px;
+      width: 32px;
+      height: 32px;
+    }
+    & .product-code {
+      margin: 0;
+    }
 
+  }
+}
