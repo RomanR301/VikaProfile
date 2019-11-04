@@ -1,2 +1,31 @@
 @import "../abstracts/mixins";
 @import "../abstracts/variables";
+
+.pageNotFound {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-wrapper {
+    text-align: center;
+    width: 400px;
+  }
+  &-heading {
+    font-size: 120px;
+    line-height: 120px;
+  }
+  &-text {
+    margin: 10px 0 30px 0;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .pageNotFound {
+    &-wrapper {
+      width: unset;
+    }
+    &-heading {
+      font-size: 80px;
+      line-height: 80px;
+    }
+  }
+}
