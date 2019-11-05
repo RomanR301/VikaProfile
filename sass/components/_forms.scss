@@ -5,7 +5,7 @@
   margin-bottom: 20px;
 }
 
-.form-input {
+.form-input, .form-textarea {
   padding: 14px 16px;
   font-size: 14px;
   line-height: 20px;
@@ -21,6 +21,17 @@
     outline: none;
   }
 }
+
+.form-textarea {
+  padding: 12px 16px;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: inherit;
+  text-align: inherit;
+  resize: vertical;
+}
+
+
 
 .wpcf7-not-valid-tip {
   color: #DA2F2F;
