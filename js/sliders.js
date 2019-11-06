@@ -4,64 +4,42 @@ window.addEventListener("load", function () {
 
 jQuery(function () {
   /*home*/
-  let primaryScreenCarousel = document.querySelector('.primary-screen-carousel') !== null;
-  var mainCarousel;
-  if (primaryScreenCarousel) {
-      mainCarousel = front.newSlider('.primary-screen-carousel', {
-          cellAlign: 'center',
-          contain: false,
-          pageDots: true,
-          // autoPlay: true,
-          // autoPlay: 5000,
-          verticalCells: true,
-          prevNextButtons: false
-      });
-  }
-  let homeFirstSlider = document.querySelector('.home-first-slider') !== null;
-  if (homeFirstSlider) {
-      front.newSlider('.home-first-slider', {
-          cellAlign: 'left',
-          contain: true,
-          prevNextButtons: true,
-      });
-  }
+    let primaryScreenCarousel = document.querySelector('.primary-screen-carousel') !== null;
+    var mainCarousel;
+    if (primaryScreenCarousel) {
+        mainCarousel = front.newSlider('.primary-screen-carousel', {
+            cellAlign: 'center',
+            contain: false,
+            pageDots: true,
+            // autoPlay: true,
+            // autoPlay: 5000,
+            verticalCells: true,
+            prevNextButtons: false
+        });
+    }
 
-  let homeSecondSlider = document.querySelector('.home-second-slider') !== null;
-  if (homeSecondSlider) {
-      front.newSlider('.home-second-slider', {
-          cellAlign: 'left',
-          contain: true,
-          prevNextButtons: true,
-      });
-  }
+    let productSliders = document.querySelectorAll('.products-carousel');
+        for ( var i=0, len = productSliders.length; i < len; i++ ) {
+        let productSlider = productSliders[i];
+        new Flickity( productSlider, {
+            cellSelector: '.products-carousel__item',
+            cellAlign: 'left',
+            contain: true,
+            prevNextButtons: true,
+            pageDots: false,
+            wrapAround: true
+        });
+    }
 
-  let homeThirdSlider = document.querySelector('.home-third-slider') !== null;
-  if (homeThirdSlider) {
-      front.newSlider('.home-third-slider', {
-          cellAlign: 'left',
-          contain: true,
-          prevNextButtons: true,
-      });
-  }
-
-  let homeFourthSlider = document.querySelector('.home-fourth-slider') !== null;
-  if (homeFourthSlider) {
-      front.newSlider('.home-fourth-slider', {
-          cellAlign: 'left',
-          contain: true,
-          prevNextButtons: true,
-      });
-  }
-  
-
-
-
-  // document.querySelectorAll(".products-carousel") && front.newSlider(".products-carousel", {
-  //   cellAlign: "left",
-  //   contain: true,
-  //   prevNextButtons: true,
-  //   wrapAround: true
-  // });
-
-  
+    let aboutSliders = document.querySelectorAll('.about-item__slider');
+        for ( var i=0, len = aboutSliders.length; i < len; i++ ) {
+        let aboutSlider = aboutSliders[i];
+        new Flickity( aboutSlider, {
+            cellSelector: '.slider-item',
+            pageDots: true,
+            percentPosition: true,
+            prevNextButtons: false,
+            wrapAround: true
+        });
+    }
 });
