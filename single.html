@@ -50,11 +50,84 @@
 							<div class="single-product__description heading-5">
 								Використовується для облицювання керамічною плиткою зовні і всередині будівель. Призначена для облицювання цегляних, бетонних, цементно-піщаних і цементно-вапняних поверхонь.
 							</div>
-							<div class="single-product__select select-one d-flex">
-								<div class="single-product__select_size">
-									Вага:
+
+							<div class="tabs">
+								<ul class="tabs-list tabs-ul d-flex align-middle">
+									<div class="product-tabs-category">
+										Вага:
+									</div>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'product-0','.tabs')" class="tabs-list__link tab-links active">1 </a>
+									</li>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'product-1','.tabs')" class="tabs-list__link tab-links">15 kg</a>
+									</li>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'product-2','.tabs')" class="tabs-list__link tab-links">15 kg</a>
+									</li>
+								</ul>
+								<div class="tabs-wrap">
+									<div class="tab-content active" id="product-0">
+										<div class="product-tabs-form">
+											<form action="">
+												<div class="single-product__details d-flex align-middle">
+													<div class="product-item-spinner">
+														<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+														<input type="text" class="product-item-spinner__input" name="" value="1" />
+														<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
+													</div>
+													<div class="--new-price heading-3 --medium">1 грн</div>
+													<div class="--old-price heading-5">52 грн</div>
+													<div class="--percent">-99%</div>
+												</div>
+												<div class="single-product__add">
+													<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="product-1">
+										<div class="product-tabs-form">
+											<form action="">
+												<div class="single-product__details d-flex align-middle">
+													<div class="product-item-spinner">
+														<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+														<input type="text" class="product-item-spinner__input" name="" value="1" />
+														<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
+													</div>
+													<div class="--new-price heading-3 --medium">124 грн</div>
+													<div class="--old-price heading-5">156 грн</div>
+													<div class="--percent">-26%</div>
+												</div>
+												<div class="single-product__add">
+													<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="product-2">
+										<div class="product-tabs-form">
+											<form action="">
+												<div class="single-product__details d-flex align-middle">
+													<div class="product-item-spinner">
+														<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+														<input type="text" class="product-item-spinner__input" name="" value="1" />
+														<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
+													</div>
+													<div class="--new-price heading-3 --medium">99 грн</div>
+													<div class="--old-price heading-5">999 грн</div>
+													<div class="--percent">-99%</div>
+												</div>
+												<div class="single-product__add">
+													<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
+												</div>
+											</form>
+										</div>
+									</div>
 								</div>
-								<ul class="select-one-list">
+							</div>
+
+							<!-- <ul class="select-one-list">
 									<li class="select-one-list__item">
 										<label>
 											<input type="radio" value="" class="form-radio" name="" checked />
@@ -76,10 +149,10 @@
 								</ul>
 							</div>
 							<div class="single-product__details d-flex align-middle">
-								<div class="input-number-wrapper">
-									<button class="quantity-arrow-minus">-</button>
-									<input type="number" class="input-number" name="single-product-quantity" value="1" />
-									<button class="quantity-arrow-plus">+</button>
+								<div class="product-item-spinner">
+									<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+									<input type="text" class="product-item-spinner__input" name="" value="1" />
+									<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
 								</div>
 								<div class="--new-price heading-3 --medium">124 грн</div>
 								<div class="--old-price heading-5">156 грн</div>
@@ -87,7 +160,7 @@
 							</div>
 							<div class="single-product__add">
 								<button class="btn btn-primary">ДОДАТИ В КОШИК</button>
-							</div>
+							</div> -->
 							<div class="terms-of-delivery d-flex align-items entry-content">
 								<span>Перегляньте наші</span>
 								<a href="#">умови оплати та доставки</a>

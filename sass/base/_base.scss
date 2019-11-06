@@ -54,8 +54,8 @@ img {
 }
 
 .page-title {
-  font-size: 36px;
-  line-height: 38px;
+  @include fontSize(24, 36);
+  line-height: 1.13;
   margin-top: 60px;
   @media (max-width: $breakpoint-lg) {
     margin-top: 0;
