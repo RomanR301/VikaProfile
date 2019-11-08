@@ -1,0 +1,72 @@
+.woocommerce-NoticeGroup,
+.woocommerce-NoticeGroup-updateOrderReview {
+  display: none;
+}
+
+// Checkout
+.input-text {
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $defaultTextColor;
+  border-radius: 5px;
+  border: 1px solid $whiteGreyColor;
+  width: 100%;
+  margin-bottom: 20px;
+  &::placeholder {
+    color: $greyColor;
+  }
+  &:focus {
+    border: 1px solid #333333;
+    outline: none;
+  }
+}
+
+
+#place_order {
+  background: $blueColor;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  font-family: 'Gotham', sans-serif;
+  font-size: 16px;
+  @include fontSize(14, 16);
+  display: inline-block;
+  padding: 12px 24px;
+  min-width: 100px;
+  text-align: center;
+  @include transition(0.3);
+  &:hover {
+    background: $blueHoverColor;
+  }
+}
+
+.woocommerce-billing-fields__field-wrapper {
+  & label {
+    display: none;
+  }
+}
+
+.woocommerce-billing-fields {
+  & h3 {
+    display: none;
+  }
+}
+
+.woocommerce-shipping-fields, .shop_table {
+  display: none;
+}
+
+#order_review_heading {
+  display: none;
+}
+
+.woocommerce .col2-set .col-1, .woocommerce-page .col2-set .col-1 {
+  float: none!important;
+  width: 100%!important;
+}
+
+.woocommerce-checkout #payment {
+  background: transparent!important;
+}

@@ -27,6 +27,17 @@
 										<li class="menu-item"><a href="news.html">Новини</a></li>
 										<li class="menu-item"><a href="contacts.html">Контакти</a></li>
 									</ul>
+									<div class="header-lang --mobile">
+										<ul class="header-lang-list">
+											<li class="header-lang-list__item">
+												<a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
+											</li>
+											<li class="lang-toggle ua"></li>
+											<li class="header-lang-list__item">
+												<a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
+											</li>
+										</ul>
+									</div>
 									<ul class="menu-mobile">
 										<li class="menu-mobile__item">
 											<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>380 (93) 225 43 52</a>
@@ -45,13 +56,6 @@
 										</li>
 									</ul>
 								</div>
-								<!-- <div class="header-lang">
-														<input class="checkbox" id="checkbox1" type="checkbox" />
-														<label for="checkbox1" class="checkbox-label">
-															<span class="ua">РУС</span>
-															<span class="ru">УКР</span>
-														</label>
-													</div> -->
 							</nav>
 						</div>
 						<div class="hamburger">
@@ -61,13 +65,17 @@
 						</div>
 					</div>
 					<div class="header-column">
-						<!-- <div class="header-lang">
-												<input class="checkbox" id="checkbox1" type="checkbox" />
-												<label for="checkbox1" class="checkbox-label">
-													<a lang="uk" class="ua" hreflang="uk" href="#">УКР</a>
-													<a lang="ru-RU" class="ru" hreflang="ru-RU" href="#">РУС</a>
-												</label>
-											</div> -->
+						<div class="header-lang">
+							<ul class="header-lang-list">
+								<li class="header-lang-list__item">
+									<a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
+								</li>
+								<li class="lang-toggle ua"></li>
+								<li class="header-lang-list__item">
+									<a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -209,10 +217,10 @@
 							</div>
 							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
-									<div class="primary-screen__quantity input-number-wrapper">
-										<button class="quantity-arrow-minus">-</button>
-										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
-										<button class="quantity-arrow-plus">+</button>
+									<div class="product-item-spinner">
+										<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+										<input type="text" class="product-item-spinner__input" name="" value="1" />
+										<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
 									</div>
 									<div class="primary-screen__new-price --new-price">124 грн</div>
 									<div class="primary-screen__old-price --old-price">156 грн</div>
@@ -243,10 +251,10 @@
 							</div>
 							<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
 								<div class="primary-screen__details d-flex align-middle">
-									<div class="primary-screen__quantity input-number-wrapper">
-										<button class="quantity-arrow-minus">-</button>
-										<input type="number" class="input-number" name="primary-product-quantity" value="1" />
-										<button class="quantity-arrow-plus">+</button>
+									<div class="product-item-spinner">
+										<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
+										<input type="text" class="product-item-spinner__input" name="" value="1" />
+										<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
 									</div>
 									<div class="primary-screen__new-price --new-price">124 грн</div>
 									<div class="primary-screen__old-price --old-price">156 грн</div>
@@ -278,7 +286,7 @@
 								</div>
 								<div class="product-content">
 									<div class="product-title">
-										Грунтовка Ceresit (5 л)
+										Грунтовка Ceresit (5 л) Грунтовка Ceresit (5 л)
 									</div>
 									<div class="product-code">
 										Артикул: 25436587
@@ -471,29 +479,48 @@
 							<div class="banners-image">
 								<img src="/img/banners/banner1.png" alt="" />
 							</div>
-							<div class="banners-price d-flex align-end">
-								<div class="banners-price__new heading-2 --new-price">123 грн</div>
-								<div class="banners-price__old heading-3 --old-price">158 грн</div>
-							</div>
-							<div class="banners-select select-one">
-								<ul class="select-one-list">
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" checked />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+							<div class="tabs single-product-info">
+								<div class="tabs-wrap">
+									<div class="tab-content" id="banner-4">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">12 грн</div>
+														<div class="banners-price__new heading-3 --old-price">10 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="banner-5">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">25 грн</div>
+														<div class="banners-price__new heading-3 --old-price">30 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="banner-6">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">1000 грн</div>
+														<div class="banners-price__new heading-3 --old-price">1200 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<ul class="tabs-list tabs-ul d-flex align-middle">
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-4','.tabs')" class="tabs-list__link tab-links">12 кг </a>
 									</li>
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-5','.tabs')" class="tabs-list__link tab-links">15 л</a>
 									</li>
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-6','.tabs')" class="tabs-list__link tab-links">15 кг</a>
 									</li>
 								</ul>
 							</div>
@@ -522,29 +549,48 @@
 							<div class="banners-image">
 								<img src="/img/banners/banner1.png" alt="" />
 							</div>
-							<div class="banners-price d-flex align-end">
-								<div class="banners-price__new heading-2 --new-price">123 грн</div>
-								<div class="banners-price__old heading-3 --old-price">158 грн</div>
-							</div>
-							<div class="banners-select select-one">
-								<ul class="select-one-list">
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" checked />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+							<div class="tabs single-product-info">
+								<div class="tabs-wrap">
+									<div class="tab-content" id="banner-1">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">12 грн</div>
+														<div class="banners-price__new heading-3 --old-price">10 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="banner-2">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">25 грн</div>
+														<div class="banners-price__new heading-3 --old-price">30 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+									<div class="tab-content" id="banner-3">
+										<div class="banners-tabs-form">
+											<form action="">
+												<div class="banners-tabs-container">
+														<div class="banners-price__new heading-2 --new-price">1000 грн</div>
+														<div class="banners-price__new heading-3 --old-price">1200 грн</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+								<ul class="tabs-list tabs-ul d-flex align-middle">
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-1','.tabs')" class="tabs-list__link tab-links">12 кг </a>
 									</li>
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-2','.tabs')" class="tabs-list__link tab-links">15 л</a>
 									</li>
-									<li class="select-one-list__item">
-										<label>
-											<input type="radio" value="" class="form-radio" name="" />
-											<span class="form-radio-number">5 кг</span>
-										</label>
+									<li class="tabs-list__item">
+										<a onclick="front.openTab(this, 'banner-3','.tabs')" class="tabs-list__link tab-links">15 кг</a>
 									</li>
 								</ul>
 							</div>
@@ -1221,10 +1267,92 @@
 				</div>
 			</div>
 		</section>
-		<footer class="footer"></footer>
+		<footer class="footer">
+			<div class="container">
+				<div class="row d-flex align-justify">
+					<div class="footer-contacts">
+						<div class="footer-title heading-4">
+							Контакти
+						</div>
+						<ul class="footer-list">
+							<li class="footer-list__item">
+								<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>+380 (93) 225 43 52</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="tel:+380973355211"> <i class="icon-contacts-phone"></i>+380 (97) 335 52 11</a>
+							</li>
+							<li class="footer-list__item">
+								<a href="mailto:info@vikaprofile.com"> <i class="icon-contacts-email"></i>info@vikaprofile.com</a>
+							</li>
+							<li class="footer-list__item"><i class="icon-clock">Пн. - Пт. з 08:00 - 20:00</i></li>
+						</ul>
+					</div>
+					<div class="footer-information">
+						<div class="footer-title heading-4">
+							Інформація
+						</div>
+						<ul id="menu-informaczijne-menyu" class="footer-list">
+							<li id="menu-item-191" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-191"><a href="http://vikaprofile.randevs.club/about-us/">Про нас</a></li>
+							<li id="menu-item-192" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-192"><a href="http://vikaprofile.randevs.club/contacts/">Контакти</a></li>
+							<li id="menu-item-193" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-193"><a href="http://vikaprofile.randevs.club/events/">Новини</a></li>
+							<li id="menu-item-194" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-194"><a href="http://vikaprofile.randevs.club/payment-and-delivery/">Оплата і доставка</a></li>
+						</ul>
+					</div>
+					<div class="footer-catalog">
+						<div class="footer-title heading-4">
+							Каталог
+						</div>
+						<ul class="footer-list">
+							<li class="footer-list__item"><a href="#">Акції</a></li>
+							<li class="footer-list__item"><a href="#">Звукоізоляційні матеріали</a></li>
+							<li class="footer-list__item"><a href="#">Герметики</a></li>
+							<li class="footer-list__item"><a href="#">Клеї для плитки</a></li>
+						</ul>
+					</div>
+					<div class="footer-subscribe">
+						<div class="footer-title heading-4">
+							Підписка
+						</div>
+						<div class="footer-subtitle heading-6">
+							Підписавшись на розсилку, Ви завжди будете отримувати інформацію про акції та новини
+						</div>
+						<div class="footer-form">
+							<form action="">
+								<input type="email" class="footer-subscribe__input" name="subscribe-email" id="" placeholder="Ваш e-mail" />
+								<input type="submit" class="footer-subscribe__submit" value="" />
+							</form>
+						</div>
+						<div class="footer-title heading-4">
+							Соціальні мережі
+						</div>
+						<div class="footer-socials">
+							<ul class="footer-socials-list d-flex align-middle">
+								<li class="footer-socials-list__item d-flex align-middle">
+									<a href="#"><i class="icon-instagram"></i>Instagram</a>
+								</li>
+								<li class="footer-socials-list__item d-flex align-middle">
+									<a href="#"><i class="icon-facebook"></i>Facebook</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="footer-copyright d-flex align-justify">
+						<div class="footer-column">
+							© Віка-профіль, 2019
+						</div>
+						<div class="footer-column">
+							<a href="#">Дизайн та розробка — <b>LETARGET</b></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="js/libs/jquery-3.4.1.js"></script>
 		<script src="js/libs/flickity.pkgd.min.js"></script>
 		<script src="js/sliders.js"></script>
+		<script src="js/tabs.js"></script>
 		<script src="js/js-vikaprofile.js"></script>
 	</body>
 </html>

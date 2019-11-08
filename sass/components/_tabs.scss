@@ -91,6 +91,48 @@
   }
 }
 
+.banners {
+  & .tabs, .tabs-wrap {
+    margin: 0;
+  }
+  & .tabs-list {
+    padding-bottom: 24px;
+    max-width: 56%;
+    &__item {
+      margin: 0 12px 12px 0;
+    }
+  }
+  &-tabs {
+    &-container {
+      display: flex;
+      align-items: center;
+      padding-bottom: 24px;
+    }
+  }
+}
+
+@media(max-width: $breakpoint-lg) {
+  .banners {
+    & .tabs-list {
+      max-width: 100%;
+    }
+    &-tabs {
+      &-container {
+        justify-content: center;
+      }
+    }
+  }
+}
+@media(max-width: $breakpoint-lg) {
+  .banners {
+    & .tabs-list__item:first-child {
+      margin: 0 12px 12px 0;
+    }
+    & .tabs-list__link {
+      padding: 4px 20px;
+    }
+  }
+}
 
 
 @keyframes fadeEffect {

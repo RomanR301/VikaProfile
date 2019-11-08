@@ -5,6 +5,8 @@ let front = {
   nav: $('.navbar'),
   categoriesHam: $('.categories-hamburger'),
   filterList: $('.categories-container'),
+  filterItem: $('.filter-item'),
+  langToggle: $('.lang-toggle'),
   body: $('body'),
   slider_options_default: {
     wrapAround: true,
@@ -55,6 +57,32 @@ let front = {
     this.filterList.toggleClass("active")) : (this.categoriesHam.addClass("open"),
     this.filterList.toggleClass("active"))
   },
+  toggleLangRu: function(){
+    if (this.langToggle.hasClass('ua')) {
+      this.langToggle.removeClass('ua'),
+      this.langToggle.addClass('ru')
+    } else {
+      null;
+    }
+  },
+  toggleLangUa: function(){
+    if (this.langToggle.hasClass('ru')) {
+      this.langToggle.removeClass('ru'),
+      this.langToggle.addClass('ua')
+    } else {
+      null;
+    }
+  },
+  toggleLang: function(){
+    if (this.langToggle.hasClass('ua')) {
+      $('.ru')[0].click();
+      this.langToggle.removeClass('ua').addClass('ru')
+    } else {
+      $('.ua')[0].click();
+      this.langToggle.removeClass('ru').addClass('ua')
+           // $('.ua')[0].click();
+    }
+  },
   bodyPreventScrolling: function() {
     this.body.toggleClass('preventScrolling');
   },
@@ -70,6 +98,25 @@ let front = {
       e.toggleNav();
       e.bodyPreventScrolling();
     });
+    $(document).on('click', '.ru', function() {
+      e.toggleLangRu();
+    });
+    $(document).on('click', '.ua', function() {
+      e.toggleLangUa();
+    });
+    $(document).on('click', '.lang-toggle', function() {
+      e.toggleLang();
+    });
+
+    // $(document).on("click", ".filter-item", function(event) {
+    //   let target = $(this)
+    //   if (target.hasClass('active')){
+    //     null
+    //   } else {
+    //     $('.filter-item').removeClass('active')
+    //     target.addClass('active')
+    //   }
+    // })
   }
 };
 

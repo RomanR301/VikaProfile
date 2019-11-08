@@ -5,7 +5,6 @@
 .primary-screen {
   position: relative;
   height: calc(100vh - 200px);
-  // margin-top: 200px;
   &-carousel {
     height: 100%;
     &__item {
@@ -26,11 +25,13 @@
   &__details {
     padding-top: 32px;
   }
-  &__quantity {
+  & .product-item-spinner {
     margin-right: 20px;
   }
   &__new-price {
     margin-right: 20px;
+    font-size: 36px;
+    line-height: 34px;  
   }
   &__old-price {
     margin-right: 20px;

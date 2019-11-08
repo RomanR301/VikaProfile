@@ -26,7 +26,8 @@
 @import "layout/_header";
 // Vendor
 @import "vendor/_flickity";
-@import "vendor/_animate";
+@import "vendor/_woocomerce";
+@import "vendor/_animate"; 
 // Pages
 @import "pages/_home";
 @import "pages/_categories";
@@ -40,5 +41,6 @@
 @import "pages/_news";
 @import "pages/_delivery";
 @import "pages/_about";
+
 
 

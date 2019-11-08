@@ -12,7 +12,6 @@
     }
   }
   &-filter {
-    width: 280px;
     z-index: 99;
     background: #fff;
     @include transition(.3);
@@ -21,10 +20,41 @@
       margin-bottom: 10px;
     }
     &__items {
-      padding-left: 10px;
+      & .filter-item {
+        padding-left: 34px;
+        position: relative;
+        & a {
+          &:before {
+            content: '';
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            border: 1px solid $whiteGreyColor;
+            border-radius: 2px;
+            left: 10px;
+            top: 4px;
+          }
+        }
+        &.active {
+          & a {
+            &:before {
+              background-color: $blueColor;
+              background-image: url('../img/checkmark.svg');
+              background-repeat: no-repeat;
+              background-position: center;
+            }
+          }
+        }
+      }
+      & .count {
+        padding-left: 10px;
+      }
     }
   }
   &-products {
     padding-top: 115px;
+  }
+  &-empty {
+    color: #BBBBBB;
   }
 }

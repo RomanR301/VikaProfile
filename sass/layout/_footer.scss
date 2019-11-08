@@ -31,6 +31,9 @@
         }
       }
     }
+    & .menu-item {
+      padding-bottom: 10px;
+    }
   }
   &-subscribe {
     max-width: 330px;
@@ -60,7 +63,7 @@
       }
     }
     &__submit {
-      background: url("../../img/footer.input.svg");
+      background: url("../img/footer.input.svg");
       border: none;
       position: absolute;
       background-repeat: no-repeat;
@@ -69,7 +72,7 @@
       top: 0;
       right: 0;
       width: 50px;
-      height: 100%;
+      height: 34px;
     }
 
   }
@@ -134,7 +137,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      &__item {
+      & .menu-item {
         padding-bottom: 8px;
       }
     }
