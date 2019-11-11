@@ -637,13 +637,13 @@ h1, h2, h3, h4, h5, h6 {
   transform: rotate(45deg);
 }
 
-.product-item-spinner {
+.quantity {
   display: flex;
   align-items: center;
   margin: 0;
 }
 
-.product-item-spinner__input {
+.quantity input[type=number] {
   margin: 0 15px;
   padding: 7px;
   width: 38px;
@@ -654,7 +654,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.product-item-spinner__btn {
+.quantity input[type=button] {
   border: none;
   background: transparent;
   font-size: 20px;
@@ -1531,6 +1531,92 @@ input[type="search"]::-webkit-search-results-decoration {
   .tabs-list__item_link {
     font-size: 14px;
   }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -17px;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  outline: 0;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.modal__body {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  padding: 30px 17px 30px 0;
+  -webkit-overflow-scrolling: touch;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.modal__body:after, .modal__body:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 1px;
+  width: 0;
+}
+
+.modal__content {
+  display: table;
+  position: relative;
+  margin: auto;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.modal__close {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+
+.modal__close:hover {
+  transform: rotate(180deg);
+}
+
+.animate-in {
+  animation: modalIn 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-iteration-count: 1;
+}
+
+.animate-away {
+  animation: modalAway 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation-iteration-count: 1;
+}
+
+.callback-modal {
+  max-width: 420px;
+  text-align: center;
+  padding: 40px 40px 20px 40px;
+}
+
+.callback-modal__heading {
+  margin-bottom: 20px;
+}
+
+.callback-modal input[type=submit] {
+  width: 100%;
 }
 
 .container {
@@ -2627,7 +2713,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 .header.--up {
-  top: -42px;
+  top: -43px;
   transition: top 0.2s ease-in-out;
 }
 
@@ -3506,6 +3592,10 @@ input[type="search"]::-webkit-search-results-decoration {
   color: #333333;
 }
 
+.single-product__add button {
+  border-radius: 100px;
+}
+
 .single-product-tab-description {
   margin-top: 30px;
 }
@@ -3810,77 +3900,31 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
-.thankyou {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.thankyou-wrapper {
+.thank-you, .not-found {
   text-align: center;
-  width: 560px;
 }
 
-.thankyou-text {
-  margin: 30px 0;
+.thank-you-heading, .not-found-heading {
+  margin-bottom: 30px;
 }
 
-.thankyou-text a {
-  color: #0993BE;
-  position: relative;
-  font-size: 16px;
-  line-height: 24px;
+.thank-you-text, .not-found-text {
+  margin-bottom: 30px;
 }
 
-.thankyou-text a:after {
-  content: "";
-  position: absolute;
-  background: #0993BE;
-  height: 1px;
-  bottom: -3px;
-  left: 0;
-  width: 0;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.thankyou-text a:hover:after {
-  width: 100%;
-}
-
-@media (max-width: 767px) {
-  .thankyou-wrapper {
-    width: unset;
-  }
-}
-
-.pageNotFound {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.pageNotFound-wrapper {
-  text-align: center;
-  width: 400px;
-}
-
-.pageNotFound-heading {
+.not-found-heading {
   font-size: 120px;
   line-height: 120px;
 }
 
-.pageNotFound-text {
-  margin: 10px 0 30px 0;
-}
-
 @media (max-width: 767px) {
-  .pageNotFound-wrapper {
-    width: unset;
+  .thank-you-heading, .not-found-heading {
+    margin-bottom: 15px;
   }
-  .pageNotFound-heading {
+  .thank-you-text, .not-found-text {
+    margin-bottom: 15px;
+  }
+  .not-found-heading {
     font-size: 80px;
     line-height: 80px;
   }

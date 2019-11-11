@@ -248,10 +248,10 @@
 										<div class="product-tabs-form">
 											<form action="">
 												<div class="single-product__details d-flex align-middle">
-													<div class="product-item-spinner">
-														<button class="product-item-spinner__btn --minus" data-product_id="">-</button>
-														<input type="text" class="product-item-spinner__input" name="" value="1" />
-														<button class="product-item-spinner__btn --plus" data-product_id="">+</button>
+													<div class="quantity">
+														<input class="minus" type="button" value="-" />
+														<input type="number" step="1" min="0" max="" name="quantity" value="1" title="К-ть" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric" />
+														<input class="plus" type="button" value="+" />
 													</div>
 													<div class="--new-price heading-3 --medium">1 грн</div>
 													<div class="--old-price heading-5">52 грн</div>

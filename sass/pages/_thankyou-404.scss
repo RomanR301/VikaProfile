@@ -1,0 +1,36 @@
+@import "../abstracts/mixins";
+@import "../abstracts/variables";
+
+
+.thank-you, .not-found {
+  text-align: center;
+  &-heading {
+    margin-bottom: 30px;
+  }
+  &-text {
+    margin-bottom: 30px;
+  }
+}
+
+.not-found-heading {
+  font-size: 120px;
+  line-height: 120px;
+}
+
+
+@media (max-width: $breakpoint-md) {
+  .thank-you, .not-found {
+    &-heading {
+      margin-bottom: 15px;
+    }
+    &-text {
+      margin-bottom: 15px;
+    }
+  }
+
+  .not-found-heading {
+    font-size: 80px;
+    line-height: 80px;
+  }
+}
+

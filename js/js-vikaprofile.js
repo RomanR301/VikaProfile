@@ -80,7 +80,6 @@ let front = {
     } else {
       $('.ua')[0].click();
       this.langToggle.removeClass('ru').addClass('ua')
-           // $('.ua')[0].click();
     }
   },
   bodyPreventScrolling: function() {
@@ -107,34 +106,94 @@ let front = {
     $(document).on('click', '.lang-toggle', function() {
       e.toggleLang();
     });
+  }
+};
 
-    // $(document).on("click", ".filter-item", function(event) {
-    //   let target = $(this)
-    //   if (target.hasClass('active')){
-    //     null
-    //   } else {
-    //     $('.filter-item').removeClass('active')
-    //     target.addClass('active')
-    //   }
-    // })
+let modal = {
+  closeButton: $('.js-close-modal'),
+  closeOverlay: $('.modal'),
+
+  init: function () {
+      this.events();
+  },
+  openModal: function (id) {
+      let modalWindow = $(id);
+      modalWindow.fadeIn();
+      modalWindow.find('.modal__content').removeClass('animate-away').addClass('animate-in');
+      $('html,body').addClass('preventScrolling');
+      $('html,body').off('scroll mousewheel touchmove');
+  },
+
+  closeModal: function (id) {
+      let modalWindow = $(id);
+      modalWindow.find('.modal__content').removeClass('animate-in').addClass('animate-away');
+      modalWindow.fadeOut();
+      $('html,body').removeClass('preventScrolling');
+      $('html,body').on('scroll mousewheel touchmove');
+  },
+
+  events: function () {
+
+      $(document).on('click', '.modalTrigger', function (e) {
+          e.preventDefault();
+          let self = $(this),
+              target = self.attr('data-modal');
+          modal.openModal(target);
+      });
+
+      $(document).on('click', '.modal', function (event) {
+          let self = '#' + $(this).attr('id');
+          if (event.target.className == 'modal__body') {
+              modal.closeModal(self);
+          }
+      });
+
+      $(document).on('click', '.js-close-modal', function () {
+          let self = '#' + $(this).closest('.modal').attr('id');
+          modal.closeModal(self);
+      });
+
   }
 };
 
 jQuery(function() {
-  front.init()
-  let e, t = 0, o = 5, n = $(".header").outerHeight();
-  $(window).scroll(function(t) {
-      e = !0
-  }),
-  setInterval(function() {
-      e && (!function() {
-          let e = $(this).scrollTop();
-          Math.abs(t - e) <= o || (e > t && e > n ? $(".header").removeClass("--down").addClass("--up") : e + $(window).height() < $(document).height() && $(".header").removeClass("--up").addClass("--down"),
-          t = e)
-      }(),
-      e = !1)
-  }, 250)
-})
+  front.init();
+  modal.init();
+  let didScroll;
+  let lastScrollTop = 0;
+  let delta = 5;
+  let navbarHeight = $('.header').outerHeight();
+
+  $(window).scroll(function (event) {
+      didScroll = true;
+  });
+
+  setInterval(function () {
+      if (didScroll) {
+          hasScrolled();
+          didScroll = false;
+      }
+  }, 250);
+
+  function hasScrolled() {
+      let st = $(this).scrollTop();
+      // Make sure they scroll more than delta
+      if (Math.abs(lastScrollTop - st) <= delta)
+          return;
+      // If they scrolled down and are past the navbar, add class .nav-up.
+      // This is necessary so you never see what is "behind" the navbar.
+      if (st > lastScrollTop && st > navbarHeight) {
+          // Scroll Down
+          $('.header').removeClass('--down').addClass('--up');
+      } else {
+          // Scroll Up
+          if (st + $(window).height() < $(document).height()) {
+              $('.header').removeClass('--up').addClass('--down');
+          }
+      }
+      lastScrollTop = st;
+  }
+});
 
 
 $(function(){
@@ -275,51 +334,6 @@ $(function(){
 //   }
 // };
 
-// let modal = {
-//   closeButton: $('.modal__close'),
-//   closeOverlay: $('.modal'),
-//   can: 1,
-//   init: function () {
-//       this.events();
-//   },
-//   openModal: function (id) {
-//       let modalWindow = $(id);
-//       modalWindow.fadeIn();
-//       modalWindow.find('.modal__content').removeClass('animate-away').addClass('animate-in');
-
-//       $('body, html').addClass('active');
-//   },
-
-//   closeModal: function (id) {
-//       let modalWindow = $(id);
-//       modalWindow.find('.modal__content').removeClass('animate-in').addClass('animate-away');
-//       modalWindow.fadeOut();
-//       $('body, html').removeClass('active');
-//   },
-
-//   events: function () {
-
-//       $(document).on('click', '.modalTrigger', function (e) {
-//           e.preventDefault();
-//           let self = $(this),
-//               target = self.attr('data-modal');
-//           modal.openModal(target);
-
-//       });
-
-//       $(document).on('click', '.modal', function (event) {
-//           let self = '#' + $(this).attr('id');
-//           if (event.target.className == 'modal__body') {
-//               modal.closeModal(self);
-//           }
-//       });
-
-//       $(document).on('click', '.modal__close', function () {
-//           let self = '#' + $(this).closest('.modal').attr('id');
-//           modal.closeModal(self);
-//       });
-//   }
-// };
 
 
 // jQuery(function () {

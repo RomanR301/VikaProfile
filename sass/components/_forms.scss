@@ -93,11 +93,11 @@
   }
 }
 
-.product-item-spinner {
+.quantity {
   display: flex;
   align-items: center;
   margin: 0; 
-  &__input {
+  & input[type=number] {
     margin: 0 15px;
     padding: 7px;
     width: 38px;
@@ -107,7 +107,7 @@
     text-align: center;
     outline: none;
   }
-  &__btn {
+  & input[type=button] {
     border: none;
     background: transparent;
     font-size: 20px;

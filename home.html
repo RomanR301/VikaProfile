@@ -52,7 +52,7 @@
 											<span><i class="icon-clock"></i>Пн. - Пт. з 08:00 - 20:00</span>
 										</li>
 										<li class="menu-mobile__item">
-											<button class="btn btn-primary">Замовити дзвінок</button>
+											<button class="btn btn-primary modalTrigger" data-modal="#callback-modal">Замовити дзвінок</button>
 										</li>
 									</ul>
 								</div>
@@ -119,7 +119,7 @@
 					</div>
 					<div class="header-column">
 						<div class="header-contact-us">
-							<button class="btn btn-primary">Замовити дзвінок</button>
+							<button class="btn btn-primary modalTrigger" data-modal="#callback-modal">Замовити дзвінок</button>
 						</div>
 					</div>
 					<div class="header-column">
@@ -1349,6 +1349,30 @@
 				</div>
 			</div>
 		</footer>
+
+		<div class="modal" id="callback-modal">
+			<div class="modal__body">
+				<div class="modal__content callback-modal">
+					<span class="modal__close icon-close js-close-modal"></span>
+					<div class="callback-modal__heading heading-3 --medium">
+						Заповніть дані
+					</div>
+					<div class="callback-modal-form">
+						<form action="">
+							<div class="form-group">
+								<input type="text" name="callback-name" class="form-input" placeholder="Ваше ім’я">
+							</div>
+							<div class="form-group">
+								<input type="tel" name="callback-phone" class="form-input" placeholder="Ваш номер">
+							</div>
+							<div class="form-group">
+								<input type="submit" value="Відправити" class="btn btn-primary">
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="js/libs/jquery-3.4.1.js"></script>
 		<script src="js/libs/flickity.pkgd.min.js"></script>
 		<script src="js/sliders.js"></script>
