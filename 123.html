@@ -1,0 +1,71 @@
+<form action="" class="cart">
+    <div class="cart-item">
+      <div class="row">
+        <div class="cart-column">
+          <div class="cart-item__image">
+                                  <?php echo $thumbnail;?>
+<!--										<img src="/img/products/product1.png" alt="product1" />-->
+          </div>
+        </div>
+        <div class="cart-column">
+          <div class="cart-item__title heading-4 --medium">
+                              <?php echo $product_name;?>
+
+<!--                                            Клеюча суміш Ceresit <span class="heading-4 --medium">25 кг</span>-->
+                          </div>
+          <div class="cart-item__code">
+                              <?php if (wc_product_sku_enabled() && ($_product->get_sku() || $_product->is_type('variable'))) : ?>
+                              Артикул: <?php echo $_product->sku; ?>
+                              <?php endif;?>
+                          </div>
+          <div class="cart-item__price">
+            <span class="--new-price heading-4 --medium"><?php echo $product_price;?></span>
+          </div>
+        </div>
+        <div class="cart-column">
+                          <?php echo $quantity;?>
+<!--                               --><?php //echo woocommerce_quantity_input();?>
+<!--								<div class="cart-quantity">-->
+<!--									<div class="product-item-spinner">-->
+<!--										<button class="product-item-spinner__btn --minus" data-product_id="">-</button>-->
+<!--										<input type="text" class="product-item-spinner__input" name="" value="1" />-->
+<!--										<button class="product-item-spinner__btn --plus" data-product_id="">+</button>-->
+<!--									</div>-->
+<!--								/div>-->
+        </div>
+        <div class="cart-column">
+          <span class="cart-item-total heading-4 --medium"><?php echo WC()->cart->get_product_subtotal( $_product, $cart_item['quantity'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></span>
+        </div>
+        <div class="cart-column">
+<!--										<a href="" data-product_id="" class="cart-item__remove"></a>-->
+                                  <?php
+                                  echo apply_filters( // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
+                                      'woocommerce_cart_item_remove_link',
+                                      sprintf(
+                                          '<a href="%s" class="cart-item__remove" aria-label="%s" data-product_id="%s" data-cart_item_key="%s" data-product_sku="%s"></a>',
+                                          esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
+                                          esc_attr__( 'Remove this item', 'woocommerce' ),
+                                          esc_attr( $product_id ),
+                                          esc_attr( $cart_item_key ),
+                                          esc_attr( $_product->get_sku() )
+                                      ),
+                                      $cart_item_key
+                                  );
+                                  ?>
+        </div>
+      </div>
+    </div>
+    <?php } } ?>
+              <div class="row d-flex align-middle align-right">
+                  <div class="cart-result d-flex align-middle">
+                      <div class="cart-result-price">Підсумок: <span class="cart-result-price-total --medium"><?php wc_cart_totals_order_total_html(); ?></span></div>
+                      <!--							<div class="cart-result-btn">-->
+                      <!--								<input type="submit" value="Оформити замовлення" class="btn btn-primary form-submit">-->
+                      <!--							</div>-->
+                      <a href="<?php echo esc_url( wc_get_checkout_url() ); ?>" class="btn btn-primary">
+                          <?php esc_html_e( 'Proceed to checkout', 'woocommerce' ); ?>
+                      </a>
+                  </div>
+              </div>
+              <?php endif;?>
+  </form>

@@ -13,11 +13,11 @@
     }
   }
   &-content {
-    @include fontSize(14, 18);
+    font-size: 16px;
     line-height: 22px;
     font-weight: 500;
     & a {
-      @include fontSize(14, 18);
+      font-size: 16px;
       line-height: 22px;
       font-weight: 500;
     }

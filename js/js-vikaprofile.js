@@ -18,7 +18,7 @@ let front = {
   },
   init: function() {
     this.events(),
-    this.headerScroll()
+    this.headerScroll();
   },
   newSlider: function (selector, options) {
     options = (options !== undefined) ? Object.assign({}, this.slider_options_default, options) : this.slider_options_default;

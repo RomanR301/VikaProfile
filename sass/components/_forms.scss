@@ -3,6 +3,12 @@
 
 .form-group {
   margin-bottom: 20px;
+  & .wpcf7-not-valid-tip {
+    text-align: left;
+    font-size: 12px;
+    line-height: 16px;
+    color: #DA2F2F!important;
+  }
 }
 
 .form-input, .form-textarea {
@@ -20,6 +26,12 @@
     border: 1px solid #333333;
     outline: none;
   }
+  &.wpcf7-not-valid {
+    border: 1px solid #DA2F2F;
+    &::placeholder {
+      color: #DA2F2F;
+    }
+  }
 }
 
 .form-textarea {
@@ -29,14 +41,6 @@
   font-size: inherit;
   text-align: inherit;
   resize: vertical;
-}
-
-
-.wpcf7-not-valid-tip {
-  color: #DA2F2F;
-  font-size: 12px;
-  line-height: 16px;
-  display: block;
 }
 
 .form-submit {
@@ -135,3 +139,14 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 
 
+
+// WP-response output message
+
+.wpcf7-mail-sent-ok {
+  border: 2px solid #00ACE2!important;
+  border-radius: 5px!important;
+}
+
+.wpcf7-validation-errors {
+  display: none!important;
+}
