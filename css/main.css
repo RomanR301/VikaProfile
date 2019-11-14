@@ -216,7 +216,7 @@ img {
 /* Gotham */
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro-Bold.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -224,7 +224,7 @@ img {
 
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro-Medium.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -232,7 +232,7 @@ img {
 
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro-MediumItalic.ttf") format("truetype");
+  src: url("../fonts/GothamPro-MediumItalic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -240,7 +240,7 @@ img {
 
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro-Italic.ttf") format("truetype");
+  src: url("../fonts/GothamPro-Italic.ttf") format("truetype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -248,7 +248,7 @@ img {
 
 @font-face {
   font-family: 'Gotham';
-  src: url("/fonts/GothamPro.ttf") format("truetype");
+  src: url("../fonts/GothamPro.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -3318,6 +3318,10 @@ input[type="search"]::-webkit-search-results-decoration {
   background: transparent !important;
 }
 
+.woocommerce-notices-wrapper {
+  display: none;
+}
+
 @keyframes showup {
   0% {
     opacity: 0;
@@ -3674,7 +3678,8 @@ input[type="search"]::-webkit-search-results-decoration {
   width: 100%;
   position: relative;
   text-align: center;
-  margin: 40px 15px 30px 15px;
+  margin: 40px 0 30px 0;
+  padding: 15px 0;
 }
 
 .cart-heading:before {
@@ -3687,10 +3692,43 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 0;
 }
 
+.cart-options {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.cart-options-item {
+  color: #949494;
+}
+
+.cart-options-item:nth-child(2) {
+  padding-left: 30px;
+}
+
+.cart-options-item:nth-child(3) {
+  padding-left: 140px;
+}
+
+.cart-options-item:nth-child(4) {
+  margin-right: -20px;
+}
+
 .cart-item {
   width: 100%;
   position: relative;
   padding: 30px 0;
+}
+
+.cart-item .row:first-child {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-item .cart-column:nth-child(2) {
+  margin-left: -80px;
 }
 
 .cart-item:before {
@@ -3790,13 +3828,23 @@ input[type="search"]::-webkit-search-results-decoration {
   margin-top: 14px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .cart-heading {
-    margin: 20px 15px 30px 15px;
+    margin: 10px 15px 20px 15px;
+    padding: 0;
+  }
+  .cart-options {
+    display: none;
   }
   .cart-item .row:first-child {
     flex-direction: column;
     align-items: center;
+  }
+  .cart-item .cart-column {
+    text-align: center;
+  }
+  .cart-item .cart-column:nth-child(2) {
+    margin: 0;
   }
   .cart-item-main {
     flex-direction: column;
@@ -3900,64 +3948,54 @@ input[type="search"]::-webkit-search-results-decoration {
   }
 }
 
-.thank-you, .not-found {
+.additional {
   text-align: center;
 }
 
-.thank-you-heading, .not-found-heading {
+.additional-heading {
   margin-bottom: 30px;
 }
 
-.thank-you-text, .not-found-text {
+.additional-text {
   margin-bottom: 30px;
 }
 
-.not-found-heading {
-  font-size: 120px;
-  line-height: 120px;
-}
-
-@media (max-width: 767px) {
-  .thank-you-heading, .not-found-heading {
-    margin-bottom: 15px;
-  }
-  .thank-you-text, .not-found-text {
-    margin-bottom: 15px;
-  }
-  .not-found-heading {
-    font-size: 80px;
-    line-height: 80px;
-  }
-}
-
-.search-results-heading {
+.additional-search__heading {
   margin: 30px 0 40px 0;
 }
 
-.search-no-results-heading {
-  margin: 30px 0 40px 0;
-}
-
-.no-results-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 80px;
-}
-
-.no-results-text {
+.additional-search__text {
   color: #BBBBBB;
   font-size: 16px;
   line-height: 24px;
   margin-top: 30px;
 }
 
-@media (max-width: 767px) {
-  .no-results-container {
-    padding: 15px;
-    text-align: center;
-    margin-top: 30px;
+.additional-container {
+  margin-top: 80px;
+}
+
+.page-not-found-heading {
+  font-size: 120px;
+  line-height: 120px;
+}
+
+@media (max-width: 991px) {
+  .additional-container {
+    margin-top: 0;
+  }
+  .additional-heading {
+    margin-bottom: 15px;
+  }
+  .additional-text {
+    margin-bottom: 15px;
+  }
+  .additional-search__heading {
+    margin: 10px 0 40px 0;
+  }
+  .page-not-found-heading {
+    font-size: 80px;
+    line-height: 80px;
   }
 }
 
