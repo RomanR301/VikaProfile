@@ -4,7 +4,17 @@
 
 .primary-screen {
   position: relative;
-  height: calc(100vh - 200px);
+  height: calc(100% - 100px);
+  margin-top: 100px;
+  &:before {
+    content: '';
+    background: $blueColor;
+    width: 33%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
   &-carousel {
     height: 100%;
     &__item {
@@ -24,9 +34,9 @@
   }
   &__details {
     padding-top: 32px;
-  }
-  & .product-item-spinner {
-    margin-right: 20px;
+    & .quantity {
+      margin-right: 10px;
+    }
   }
   &__new-price {
     margin-right: 20px;
@@ -40,17 +50,20 @@
     padding-top: 32px;
   }
   &__background {
-    background: $blueColor;
-    width: 33%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    top: 0;
+    // background: $blueColor;
+    // width: 33%;
+    // height: 100%;
+    // position: absolute;
+    // right: 0;
+    // top: 0;
   }
   &__icon {
     position: absolute;
-    left: 50%;
-    bottom: 45px;
+    top: 150px;
+    left: auto;
+    right: 0;
+    width: 48%;
+    height: 100%;
     & img {
       width: 440px;
       height: 440px;
@@ -58,7 +71,21 @@
     }
   }
   & .flickity-page-dots { 
-    margin: 0 auto;
+    position: absolute;
+    max-width: 1320px;
+    padding: 0 15px;
+    margin: auto;
+    width: 100%;
+    left: 0;
+    right: 0;
+    text-align: left;
+    bottom: 12px;
+    z-index: 10;
+    list-style: none;
+    text-align: center;
+    line-height: 1;
+    transition: all 0.3s ease;
+    text-align: left;
   }
 }
 
@@ -67,11 +94,14 @@
   .primary-screen {
     height: auto;
     margin-top: 20px;
-    // height: calc(100vh - 40px);
+    &:before {
+      display: none;
+    }
     &-carousel {
-      // height: auto;
       &__item {
         height: unset;
+        display: flex;
+        flex-direction: column-reverse;
       }
     }
     &__title {
@@ -79,6 +109,9 @@
       font-size: 24px;
       line-height: 28px;
       padding-top: 16px;
+      & h2 {
+        font-size: 30px;
+      }
     }
     &__description {
       text-align: center;
@@ -102,6 +135,16 @@
     &__details {
       padding-top: 20px;
       justify-content: center;
+      & .quantity {
+        margin-right: 10px;
+      }
+    }
+    &__new-price {
+      margin-right: 10px;
+      font-size: 20px;
+    }
+    &__old-price {
+      margin-right: 10px;
     }
     &__quantity {
       width: 100%;

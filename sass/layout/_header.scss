@@ -404,7 +404,8 @@
         color: $blueColor;
       }
       & a {
-        @include fontSize(14, 16)
+        @include fontSize(14, 16);
+        display: block;
       }
       &.current-menu-item {
         color: $blueColor;

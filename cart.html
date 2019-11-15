@@ -1,395 +1,382 @@
 <!DOCTYPE html>
 <html lang="uk" xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="format-detection" content="telephone=no" />
-    <title>Vika Profile</title>
-    <meta name="description" content="" />
-    <link href="css/main.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="header-top">
-        <div class="container d-flex align-justify">
-          <div class="header-top-logo">
-            <a href="#">ВІКА-ПРОФІЛЬ</a>
-          </div>
-          <div class="header-column">
-            <div class="navbar">
-              <nav class="primary-navigation">
-                <div class="menu-primary">
-                  <ul class="menu d-flex">
-                    <li class="menu-item"><a href="home.html">Про нас</a></li>
-                    <li class="menu-item current-menu-item">
-                      <a href="categories.html">Каталог</a>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="format-detection" content="telephone=no" />
+  <title>Vika Profile</title>
+  <meta name="description" content="" />
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container d-flex align-justify">
+        <div class="header-top-logo">
+          <a href="#">ВІКА-ПРОФІЛЬ</a>
+        </div>
+        <div class="header-column">
+          <div class="navbar">
+            <nav class="primary-navigation">
+              <div class="menu-primary">
+                <ul class="menu d-flex">
+                  <li class="menu-item"><a href="home.html">Про нас</a></li>
+                  <li class="menu-item current-menu-item">
+                    <a href="categories.html">Каталог</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="terms-of-delivery.html">Оплата та доставка</a>
+                  </li>
+                  <li class="menu-item"><a href="news.html">Новини</a></li>
+                  <li class="menu-item">
+                    <a href="contacts.html">Контакти</a>
+                  </li>
+                </ul>
+                <div class="header-lang --mobile">
+                  <ul class="header-lang-list">
+                    <li class="header-lang-list__item">
+                      <a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
                     </li>
-                    <li class="menu-item">
-                      <a href="terms-of-delivery.html">Оплата та доставка</a>
-                    </li>
-                    <li class="menu-item"><a href="news.html">Новини</a></li>
-                    <li class="menu-item">
-                      <a href="contacts.html">Контакти</a>
-                    </li>
-                  </ul>
-                  <div class="header-lang --mobile">
-                    <ul class="header-lang-list">
-                      <li class="header-lang-list__item">
-                        <a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
-                      </li>
-                      <li class="lang-toggle ua"></li>
-                      <li class="header-lang-list__item">
-                        <a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA"
-                          >Укр</a
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                  <ul class="menu-mobile">
-                    <li class="menu-mobile__item">
-                      <a href="tel:+380932254352"
-                        ><i class="icon-contacts-phone"></i>380 (93) 225 43
-                        52</a
-                      >
-                    </li>
-                    <li class="menu-mobile__item">
-                      <a href="tel:+380973355211"
-                        ><i class="icon-contacts-phone"></i>38 (097) 335 52
-                        11</a
-                      >
-                    </li>
-                    <li class="menu-mobile__item">
-                      <a href="mailto:info@vikaprofile.com">
-                        <i class="icon-contacts-email"></i
-                        >info@vikaprofile.com</a
-                      >
-                    </li>
-                    <li class="menu-mobile__item">
-                      <span
-                        ><i class="icon-clock"></i>Пн. - Пт. з 08:00 -
-                        20:00</span
-                      >
-                    </li>
-                    <li class="menu-mobile__item">
-                      <button
-                        class="btn btn-primary modalTrigger"
-                        data-modal="#callback-modal"
-                      >
-                        Замовити дзвінок
-                      </button>
+                    <li class="lang-toggle ua"></li>
+                    <li class="header-lang-list__item">
+                      <a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
                     </li>
                   </ul>
                 </div>
-              </nav>
-            </div>
-            <div class="hamburger">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
+                <ul class="menu-mobile">
+                  <li class="menu-mobile__item">
+                    <a href="tel:+380932254352"><i class="icon-contacts-phone"></i>380 (93) 225 43
+                      52</a>
+                  </li>
+                  <li class="menu-mobile__item">
+                    <a href="tel:+380973355211"><i class="icon-contacts-phone"></i>38 (097) 335 52
+                      11</a>
+                  </li>
+                  <li class="menu-mobile__item">
+                    <a href="mailto:info@vikaprofile.com">
+                      <i class="icon-contacts-email"></i>info@vikaprofile.com</a>
+                  </li>
+                  <li class="menu-mobile__item">
+                    <span><i class="icon-clock"></i>Пн. - Пт. з 08:00 -
+                      20:00</span>
+                  </li>
+                  <li class="menu-mobile__item">
+                    <button class="btn btn-primary modalTrigger" data-modal="#callback-modal">
+                      Замовити дзвінок
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </nav>
           </div>
-          <div class="header-column">
-            <div class="header-lang">
-              <ul class="header-lang-list">
-                <li class="header-lang-list__item">
-                  <a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
-                </li>
-                <li class="lang-toggle ua"></li>
-                <li class="header-lang-list__item">
-                  <a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
-                </li>
-              </ul>
-            </div>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="header-column">
+          <div class="header-lang">
+            <ul class="header-lang-list">
+              <li class="header-lang-list__item">
+                <a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
+              </li>
+              <li class="lang-toggle ua"></li>
+              <li class="header-lang-list__item">
+                <a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="header-primary">
-        <div class="container d-flex align-justify align-middle">
-          <div class="header-column">
-            <div class="header-logo d-flex flex-column">
-              <div class="header-logo__container">
-                <a href="#"><span>ВІКА</span>-ПРОФІЛЬ</a>
-              </div>
-              <div class="company-description">
-                <span>Виробництво профілю та комплектуючих</span>
-                <span>для гіпсокартонних систем</span>
-              </div>
+    </div>
+    <div class="header-primary">
+      <div class="container d-flex align-justify align-middle">
+        <div class="header-column">
+          <div class="header-logo d-flex flex-column">
+            <div class="header-logo__container">
+              <a href="#"><span>ВІКА</span>-ПРОФІЛЬ</a>
+            </div>
+            <div class="company-description">
+              <span>Виробництво профілю та комплектуючих</span>
+              <span>для гіпсокартонних систем</span>
             </div>
           </div>
-          <div class="header-column">
-            <div class="header-search">
-              <form action="" method="post" class="search">
-                <input
-                  class="header-search-input"
-                  type="search"
-                  name="search"
-                  placeholder="Пошук"
-                />
-                <button class="header-search-btn" type="submit">
-                  <i class="icon-search"><img src="/img/search.svg" alt=""/></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div class="header-column">
-            <div class="header-phone">
-              <div class="header-phone__image">
-                <i class="icon-main-phone"></i>
-              </div>
-              <div class="header-phone__info">
-                <div class="phone-number">
-                  38 (093) 335 35 35
-                </div>
-                <div class="phone-schedule">
-                  Пн. - Пт. з 08:00 - 20:00
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="header-column">
-            <div class="header-contact-us">
-              <button
-                class="btn btn-primary modalTrigger"
-                data-modal="#callback-modal"
-              >
-                Замовити дзвінок
+        </div>
+        <div class="header-column">
+          <div class="header-search">
+            <form action="" method="post" class="search">
+              <input class="header-search-input" type="search" name="search" placeholder="Пошук" />
+              <button class="header-search-btn" type="submit">
+                <i class="icon-search"><img src="/img/search.svg" alt="" /></i>
               </button>
-            </div>
+            </form>
           </div>
-          <div class="header-column">
-            <div class="header-cart">
-              <a href="#"> <i class="icon-cart"></i></a>
-              <div class="cart-badge">
-                <span>8</span>
+        </div>
+        <div class="header-column">
+          <div class="header-phone">
+            <div class="header-phone__image">
+              <i class="icon-main-phone"></i>
+            </div>
+            <div class="header-phone__info">
+              <div class="phone-number">
+                38 (093) 335 35 35
+              </div>
+              <div class="phone-schedule">
+                Пн. - Пт. з 08:00 - 20:00
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row header-lines">
-            <div class="col-lg-2 col-xs-7">
-              <div class="header-column">
-                <div class="categories-dropdown">
-                  <div class="categories-hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                  </div>
-                  <div class="categories-text">
-                    <a href="#">Усі категорії</a>
-                  </div>
-                  <div class="categories-container">
-                    <ul class="categories-nav">
-                      <li>
-                        <div class="categories-nav__item_hamburger">
-                          <div class="categories-hamburger">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                          </div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="categories-nav__item_heading">
-                          <a href="#">Усі категорії</a>
-                        </div>
-                      </li>
-
-                      <li class="categories-nav__item">
-                        <a href="#">Звукоізоляційні матеріали</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Герметики</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Клеї для плитки</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Герметики</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Штукатурка</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Шпаклівка</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Монтажна піна</a>
-                      </li>
-                      <li class="categories-nav__item">
-                        <a href="#">Акції<span class="nav-sale">sale</span></a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-10 col-xs-5">
-              <div class="header-column">
-                <div class="categories-navigation">
-                  <div class="menu-categories">
-                    <ul class="menu">
-                      <li class="menu-item">
-                        <a href="#">Акції</a><span class="nav-sale">sale</span>
-                      </li>
-                      <li class="menu-item">
-                        <a href="#">Звукоізоляційні матеріали</a>
-                      </li>
-                      <li class="menu-item"><a href="#">Герметики</a></li>
-                      <li class="menu-item"><a href="#">Клеї для плитки</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
+        <div class="header-column">
+          <div class="header-contact-us">
+            <button class="btn btn-primary modalTrigger" data-modal="#callback-modal">
+              Замовити дзвінок
+            </button>
+          </div>
+        </div>
+        <div class="header-column">
+          <div class="header-cart">
+            <a href="#"> <i class="icon-cart"></i></a>
+            <div class="cart-badge">
+              <span>8</span>
             </div>
           </div>
         </div>
       </div>
-    </header>
-    <div class="body-padding"></div>
-    <section class="cart">
+    </div>
+    <div class="header-bottom">
       <div class="container">
-        <div class="row align-center --relative">
-          <div class="cart-heading heading-3 --medium">Ваша корзина</div>
-          <div class="cart-options">
-            <div class="cart-options-item">Фото товару</div>
-            <div class="cart-options-item">Характеристика</div>
-            <div class="cart-options-item">К-ть товару</div>
-            <div class="cart-options-item">Ціна</div>
-            <div class="cart-options-item">Опція</div>
-          </div>
-        </div>
-        <form action="">
-          <div class="cart-item">
-            <div class="row m-row">
-              <div class="column col-md-2 col-xs-12">
-                <div class="cart-item__image">
-                  <img src="/img/products/product1.png" alt="product1" />
+        <div class="row header-lines">
+          <div class="col-lg-2 col-xs-7">
+            <div class="header-column">
+              <div class="categories-dropdown">
+                <div class="categories-hamburger">
+                  <span></span>
+                  <span></span>
+                  <span></span>
                 </div>
-              </div>
-              <div class="column col-md-4">
-                <div class="cart-item__info">
-                  <div class="cart-item__title heading-4 --medium">
-                    Клеюча суміш Ceresit Клеюча Клеюча суміш Ceresit Клеюча
-                  </div>
-                  <div class="cart-item__code">Артикул: 25436587</div>
-                  <div class="cart-item__price">
-                    <span class="--new-price heading-4 --medium">176 грн</span>
-                    <span class="--old-price heading-4">223 грн</span>
-                    <span class="--percent">26%</span>
-                  </div>
+                <div class="categories-text">
+                  <a href="#">Усі категорії</a>
                 </div>
-              </div>
-              <div
-                class="column col-md-6 col-xs-12 d-flex align-justify align-middle"
-              >
-                <div class="cart-column">
-                  <div class="cart-quantity">
-                    <span class="quantity"
-                      >5 ×
-                      <span class="woocommerce-Price-amount amount">
-                        120.00
-                        <span class="woocommerce-Price-currencySymbol">
-                          грн
-                        </span>
-                      </span>
-                    </span>
-                  </div>
-                </div>
-                <span class="cart-item-total">
-                  <span class="total-price__text">
-                    Всього:
-                  </span>
-                  <span class="woocommerce-Price-amount amount">
-                    600.00
-                    <span class="woocommerce-Price-currencySymbol">
-                      грн
-                    </span>
-                  </span>
-                </span>
-                <div class="cart-column">
-                  <a href="" data-product_id="" class="cart-item__remove"></a>
+                <div class="categories-container">
+                  <ul class="categories-nav">
+                    <li>
+                      <div class="categories-nav__item_hamburger">
+                        <div class="categories-hamburger">
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="categories-nav__item_heading">
+                        <a href="#">Усі категорії</a>
+                      </div>
+                    </li>
+
+                    <li class="categories-nav__item">
+                      <a href="#">Звукоізоляційні матеріали</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Герметики</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Клеї для плитки</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Герметики</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Штукатурка</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Шпаклівка</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Монтажна піна</a>
+                    </li>
+                    <li class="categories-nav__item">
+                      <a href="#">Акції<span class="nav-sale">sale</span></a>
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
           </div>
-          <div class="cart-item">
-            <div class="row m-row">
-              <div class="column col-md-2 col-xs-12">
-                <div class="cart-item-main d-flex align-middle">
-                  <div class="cart-item__image">
-                    <img src="/img/products/product1.png" alt="product1" />
-                  </div>
+          <div class="col-lg-10 col-xs-5">
+            <div class="header-column">
+              <div class="categories-navigation">
+                <div class="menu-categories">
+                  <ul class="menu">
+                    <li class="menu-item">
+                      <a href="#">Акції</a><span class="nav-sale">sale</span>
+                    </li>
+                    <li class="menu-item">
+                      <a href="#">Звукоізоляційні матеріали</a>
+                    </li>
+                    <li class="menu-item"><a href="#">Герметики</a></li>
+                    <li class="menu-item"><a href="#">Клеї для плитки</a></li>
+                  </ul>
                 </div>
               </div>
-              <div class="column col-md-4">
-                <div class="cart-item__info">
-                  <div class="cart-item__title heading-4 --medium">
-                    Клеюча суміш Ceresit Клеюча Клеюча
-                  </div>
-                  <div class="cart-item__code">Артикул: 25436587</div>
-                  <div class="cart-item__price">
-                    <span class="--new-price heading-4 --medium">176 грн</span>
-                    <span class="--old-price heading-4">223 грн</span>
-                    <span class="--percent">26%</span>
-                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="body-padding"></div>
+  <section class="cart">
+    <div class="container">
+      <div class="row align-center --relative">
+        <div class="cart-heading heading-3 --medium">Ваша корзина</div>
+        <div class="cart-options">
+          <div class="cart-options-item">Фото товару</div>
+          <div class="cart-options-item">Характеристика</div>
+          <div class="cart-options-item">К-ть товару</div>
+          <div class="cart-options-item">Ціна</div>
+          <div class="cart-options-item">Опція</div>
+        </div>
+      </div>
+      <form action="">
+        <div class="cart-item">
+          <div class="row m-row">
+            <div class="column col-md-2 col-xs-12">
+              <div class="cart-item__image">
+                <img src="/img/products/product1.png" alt="product1" />
+              </div>
+            </div>
+            <div class="column col-md-4">
+              <div class="cart-item__info">
+                <div class="cart-item__title heading-4 --medium">
+                  Клеюча суміш Ceresit Клеюча Клеюча суміш Ceresit Клеюча
+                </div>
+                <div class="cart-item__code">Артикул: 25436587</div>
+                <div class="cart-item__price">
+                  <span class="--new-price heading-4 --medium">176 грн</span>
+                  <span class="--old-price heading-4">223 грн</span>
+                  <span class="--percent">26%</span>
                 </div>
               </div>
-              <div
-                class="column col-md-6 col-xs-12 d-flex align-justify align-middle"
-              >
-                <div class="cart-column">
-                  <div class="cart-quantity">
-                    <span class="quantity"
-                      >5 ×
-                      <span class="woocommerce-Price-amount amount">
-                        120.00
-                        <span class="woocommerce-Price-currencySymbol">
-                          грн
-                        </span>
+            </div>
+            <div class="column col-md-6 col-xs-12 d-flex align-justify align-middle">
+              <div class="cart-column">
+                <div class="cart-quantity">
+                  <span class="quantity">5 ×
+                    <span class="woocommerce-Price-amount amount">
+                      120.00
+                      <span class="woocommerce-Price-currencySymbol">
+                        грн
                       </span>
                     </span>
-                  </div>
-                </div>
-                <span class="cart-item-total">
-                  <span class="total-price__text">
-                    Всього:
                   </span>
-                  <span class="woocommerce-Price-amount amount">
-                    600.00
-                    <span class="woocommerce-Price-currencySymbol">
-                      грн
-                    </span>
+                </div>
+              </div>
+              <span class="cart-item-total">
+                <span class="total-price__text">
+                  Всього:
+                </span>
+                <span class="woocommerce-Price-amount amount">
+                  600.00
+                  <span class="woocommerce-Price-currencySymbol">
+                    грн
                   </span>
                 </span>
+              </span>
+              <div class="cart-column">
                 <a href="" data-product_id="" class="cart-item__remove"></a>
               </div>
             </div>
           </div>
-
-          <div class="row d-flex align-middle align-right">
-            <div class="cart-result d-flex align-middle">
-              <div class="cart-result-price">
-                Підсумок:
-                <span class="cart-result-price-total --medium">476 грн</span>
-              </div>
-              <div class="cart-result-btn">
-                <input
-                  type="submit"
-                  value="Оформити замовлення"
-                  class="btn btn-primary form-submit"
-                />
+        </div>
+        <div class="cart-item">
+          <div class="row m-row">
+            <div class="column col-md-2 col-xs-12">
+              <div class="cart-item-main d-flex align-middle">
+                <div class="cart-item__image">
+                  <img src="/img/products/product1.png" alt="product1" />
+                </div>
               </div>
             </div>
+            <div class="column col-md-4">
+              <div class="cart-item__info">
+                <div class="cart-item__title heading-4 --medium">
+                  Клеюча суміш Ceresit Клеюча Клеюча
+                </div>
+                <div class="cart-item__code">Артикул: 25436587</div>
+                <div class="cart-item__price">
+                  <span class="--new-price heading-4 --medium">176 грн</span>
+                  <span class="--old-price heading-4">223 грн</span>
+                  <span class="--percent">26%</span>
+                </div>
+              </div>
+            </div>
+            <div class="column col-md-6 col-xs-12 d-flex align-justify align-middle">
+              <div class="cart-column">
+                <div class="cart-quantity">
+                  <span class="quantity">5 ×
+                    <span class="woocommerce-Price-amount amount">
+                      120.00
+                      <span class="woocommerce-Price-currencySymbol">
+                        грн
+                      </span>
+                    </span>
+                  </span>
+                </div>
+              </div>
+              <span class="cart-item-total">
+                <span class="total-price__text">
+                  Всього:
+                </span>
+                <span class="woocommerce-Price-amount amount">
+                  600.00
+                  <span class="woocommerce-Price-currencySymbol">
+                    грн
+                  </span>
+                </span>
+              </span>
+              <a href="" data-product_id="" class="cart-item__remove"></a>
+            </div>
           </div>
-        </form>
-      </div>
-    </section>
-    <!-- <section class="empty-cart">
+        </div>
+
+        <div class="row d-flex align-middle align-right">
+          <div class="cart-result d-flex align-middle">
+            <div class="cart-result-price">
+              Підсумок:
+              <span class="cart-result-price-total --medium">476 грн</span>
+            </div>
+            <div class="cart-result-btn">
+              <input type="submit" value="Оформити замовлення" class="btn btn-primary form-submit" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+  <!-- <section class="cart">
+    <div class="container full-height">
+      <section class="empty-cart full-height">
+        <div class="container full-height">
+          <div class="row align-center full-height align-middle">
+            <div class="empty-cart-content d-flex flex-column align-middle">
+              <div class="empty-cart-image">
+                <img src="http://vikaprofile.randevs.club/wp-content/themes/vikaProfile/img/not-found.svg" alt="">
+              </div>
+              <div class="empty-cart-text">Схоже, що по корзина пуста, додайте будь-який товар</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </section> -->
+  <!-- <section class="empty-cart">
 			<div class="container">
 				<div class="row align-center">
 					<div class="empty-cart-content">
@@ -401,117 +388,105 @@
 				</div>
 			</div>
 		</section> -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row d-flex align-justify">
-          <div class="footer-contacts">
-            <div class="footer-title heading-4">
-              Контакти
-            </div>
-            <ul class="footer-list">
-              <li class="footer-list__item">
-                <a href="tel:+380932254352"
-                  ><i class="icon-contacts-phone"></i>+380 (93) 225 43 52</a
-                >
-              </li>
-              <li class="footer-list__item">
-                <a href="tel:+380973355211">
-                  <i class="icon-contacts-phone"></i>+380 (97) 335 52 11</a
-                >
-              </li>
-              <li class="footer-list__item">
-                <a href="mailto:info@vikaprofile.com">
-                  <i class="icon-contacts-email"></i>info@vikaprofile.com</a
-                >
-              </li>
-              <li class="footer-list__item">
-                <i class="icon-clock">Пн. - Пт. з 08:00 - 20:00</i>
-              </li>
-            </ul>
+  <footer class="footer">
+    <div class="container">
+      <div class="row d-flex align-justify">
+        <div class="footer-contacts">
+          <div class="footer-title heading-4">
+            Контакти
           </div>
-          <div class="footer-information">
-            <div class="footer-title heading-4">
-              Інформація
-            </div>
-            <ul class="footer-list">
-              <li class="footer-list__item"><a href="#">Про нас</a></li>
-              <li class="footer-list__item"><a href="#">Контакти</a></li>
-              <li class="footer-list__item"><a href="#">Блог</a></li>
-              <li class="footer-list__item"><a href="#">FAQ</a></li>
-              <li class="footer-list__item"><a href="#">Галерея</a></li>
-              <li class="footer-list__item">
-                <a href="#">Оплата та доставка</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-catalog">
-            <div class="footer-title heading-4">
-              Каталог
-            </div>
-            <ul class="footer-list">
-              <li class="footer-list__item"><a href="#">Акції</a></li>
-              <li class="footer-list__item">
-                <a href="#">Звукоізоляційні матеріали</a>
-              </li>
-              <li class="footer-list__item"><a href="#">Герметики</a></li>
-              <li class="footer-list__item"><a href="#">Клеї для плитки</a></li>
-            </ul>
-          </div>
-          <div class="footer-subscribe">
-            <div class="footer-title heading-4">
-              Підписка
-            </div>
-            <div class="footer-subtitle heading-6">
-              Підписавшись на розсилку, Ви завжди будете отримувати інформацію
-              про акції та новини
-            </div>
-            <div class="footer-form">
-              <form action="">
-                <input
-                  type="email"
-                  class="footer-subscribe__input"
-                  name="subscribe-email"
-                  id=""
-                  placeholder="Ваш e-mail"
-                />
-                <input
-                  type="submit"
-                  class="footer-subscribe__submit"
-                  value=""
-                />
-              </form>
-            </div>
-            <div class="footer-title heading-4">
-              Соціальні мережі
-            </div>
-            <div class="footer-socials">
-              <ul class="footer-socials-list d-flex align-middle">
-                <li class="footer-socials-list__item d-flex align-middle">
-                  <a href="#"><i class="icon-instagram"></i>Instagram</a>
-                </li>
-                <li class="footer-socials-list__item d-flex align-middle">
-                  <a href="#"><i class="icon-facebook"></i>Facebook</a>
-                </li>
-              </ul>
-            </div>
-          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <a href="tel:+380932254352"><i class="icon-contacts-phone"></i>+380 (93) 225 43 52</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="tel:+380973355211">
+                <i class="icon-contacts-phone"></i>+380 (97) 335 52 11</a>
+            </li>
+            <li class="footer-list__item">
+              <a href="mailto:info@vikaprofile.com">
+                <i class="icon-contacts-email"></i>info@vikaprofile.com</a>
+            </li>
+            <li class="footer-list__item">
+              <i class="icon-clock">Пн. - Пт. з 08:00 - 20:00</i>
+            </li>
+          </ul>
         </div>
-        <div class="row">
-          <div class="footer-copyright d-flex align-justify">
-            <div class="footer-column">
-              © Віка-профіль, 2019
-            </div>
-            <div class="footer-column">
-              <a href="#">Дизайн та розробка — <b>LETARGET</b></a>
-            </div>
+        <div class="footer-information">
+          <div class="footer-title heading-4">
+            Інформація
+          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item"><a href="#">Про нас</a></li>
+            <li class="footer-list__item"><a href="#">Контакти</a></li>
+            <li class="footer-list__item"><a href="#">Блог</a></li>
+            <li class="footer-list__item"><a href="#">FAQ</a></li>
+            <li class="footer-list__item"><a href="#">Галерея</a></li>
+            <li class="footer-list__item">
+              <a href="#">Оплата та доставка</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-catalog">
+          <div class="footer-title heading-4">
+            Каталог
+          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item"><a href="#">Акції</a></li>
+            <li class="footer-list__item">
+              <a href="#">Звукоізоляційні матеріали</a>
+            </li>
+            <li class="footer-list__item"><a href="#">Герметики</a></li>
+            <li class="footer-list__item"><a href="#">Клеї для плитки</a></li>
+          </ul>
+        </div>
+        <div class="footer-subscribe">
+          <div class="footer-title heading-4">
+            Підписка
+          </div>
+          <div class="footer-subtitle heading-6">
+            Підписавшись на розсилку, Ви завжди будете отримувати інформацію
+            про акції та новини
+          </div>
+          <div class="footer-form">
+            <form action="">
+              <input type="email" class="footer-subscribe__input" name="subscribe-email" id=""
+                placeholder="Ваш e-mail" />
+              <input type="submit" class="footer-subscribe__submit" value="" />
+            </form>
+          </div>
+          <div class="footer-title heading-4">
+            Соціальні мережі
+          </div>
+          <div class="footer-socials">
+            <ul class="footer-socials-list d-flex align-middle">
+              <li class="footer-socials-list__item d-flex align-middle">
+                <a href="#"><i class="icon-instagram"></i>Instagram</a>
+              </li>
+              <li class="footer-socials-list__item d-flex align-middle">
+                <a href="#"><i class="icon-facebook"></i>Facebook</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </footer>
+      <div class="row">
+        <div class="footer-copyright d-flex align-justify">
+          <div class="footer-column">
+            © Віка-профіль, 2019
+          </div>
+          <div class="footer-column">
+            <a href="#">Дизайн та розробка — <b>LETARGET</b></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="js/libs/jquery-3.4.1.js"></script>
-    <script src="js/libs/flickity.pkgd.min.js"></script>
-    <script src="js/sliders.js"></script>
-    <script src="js/js-vikaprofile.js"></script>
-  </body>
+  <script src="js/libs/jquery-3.4.1.js"></script>
+  <script src="js/libs/flickity.pkgd.min.js"></script>
+  <script src="js/sliders.js"></script>
+  <script src="js/js-vikaprofile.js"></script>
+</body>
+
 </html>

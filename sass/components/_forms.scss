@@ -25,6 +25,7 @@
   &:focus {
     border: 1px solid #333333;
     outline: none;
+    color: $defaultTextColor;
   }
   &.wpcf7-not-valid {
     border: 1px solid #DA2F2F;
@@ -102,7 +103,7 @@
   align-items: center;
   margin: 0; 
   & input[type=number] {
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 7px;
     width: 38px;
     height: 38px;

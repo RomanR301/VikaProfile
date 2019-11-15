@@ -8,17 +8,23 @@
   }
   &-item {
     margin-bottom: 60px;
-    &__title {
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      left: 35px;
+      width: 1px;
+      height: 85%;
+      background: transparent;
+      border: 0.5px dashed #000000;
+      top: 40px;
+    }
+    @media(max-width: $breakpoint-lg) {
       &:before {
-        content: '';
-        position: absolute;
-        left: 35px;
-        width: 1px;
-        height: 85%;
-        background: transparent;
-        border: 0.5px dashed #000000;
-        top: 40px;
+        display: none;
       }
+    }
+    &__title {
       @media(max-width: $breakpoint-lg) {
         text-align: center;
         margin-bottom: 20px;

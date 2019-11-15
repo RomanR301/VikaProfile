@@ -42,6 +42,19 @@
   }
 }
 
+.woocommerce-invalid-required-field, .woocommerce-invalid-email {
+  & input {
+    border: 1px solid #DA2F2F;
+    &::placeholder {
+      color: #DA2F2F;
+    }
+    &:focus {
+      border: 1px solid #DA2F2F;
+    }
+  }
+}
+
+
 .woocommerce-billing-fields__field-wrapper {
   & label {
     display: none;
@@ -52,6 +65,10 @@
   & h3 {
     display: none;
   }
+}
+
+.woocommerce-Price-amount {
+  font-weight: 500;
 }
 
 .woocommerce-shipping-fields, .shop_table {
@@ -78,3 +95,5 @@
 .wp-admin-bar-view-store {
   display: none!important;
 }
+
+

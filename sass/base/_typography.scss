@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-1 {
   @include fontSize(40, 64);
-  line-height: 61px;
+  line-height: 1.05;
 }
 
 .heading-2 {
@@ -48,17 +48,17 @@ h1, h2, h3, h4, h5, h6 {
 
 .heading-3 {
   @include fontSize(20, 24);
-  line-height: 36px;
+  line-height: 1.18;
 }
 
 .heading-4 {
   @include fontSize(14, 18);
-  line-height: 22px
+  line-height: 1.2
 }
 
 .heading-5 {
   @include fontSize(12, 16);
-  line-height: 24px;
+  line-height: 1.3;
 }
 
 .heading-6 {

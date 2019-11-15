@@ -2,6 +2,7 @@
 @import "../abstracts/variables";
 
 .cart {
+  // height: calc(100% - 200px);
   &-heading {
     width: 100%;
     position: relative;
@@ -26,15 +27,6 @@
     bottom: 0;
     &-item {
       color: $greyColor;
-      // &:nth-child(2) {
-      //   padding-left: 30px;
-      // }
-      // &:nth-child(3) {
-      //   padding-left: 140px;
-      // }
-      // &:nth-child(4) {
-      //   margin-right: -20px;
-      // }
     }
   }
   &-item {
@@ -134,19 +126,13 @@
 }
 
 .empty-cart {
-  height: 500px;
-  &-content {
-    padding-top: 30px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-  }
+  height: calc(100vh - 200px);
   &-text {
     color: #BBBBBB;
     font-size: 16px;
     line-height: 24px;
     margin-top: 14px;
+    text-align: center;
   }
 }
 
@@ -160,6 +146,9 @@
       display: none;
     }
     &-item {
+      &__title {
+        margin-top: 20px;
+      }
       & .row:first-child {
         flex-direction: column;
         align-items: center;
