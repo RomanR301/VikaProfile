@@ -71,3 +71,77 @@
   </form>
 
   <!-- this is test commit -->
+
+
+  <section class="primary-screen">
+      <div class="primary-screen-carousel carousel">
+
+          <?php
+          $first_slider = get_field('main_slider_loop');
+          if (!empty(($first_slider))) : ?>
+              <?php
+              foreach ($first_slider as $p):
+                  global $post;
+                  $product = new WC_Product($p->ID);
+                  ?>
+
+                  <div class="primary-screen-carousel__item">
+                      <form action="<?php echo esc_url($product->add_to_cart_url()); ?>" method="post"
+                            enctype="multipart/form-data">
+                          <div class="container primary-screen__container">
+                              <div class="row">
+                                  <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+                                      <div class="primary-screen__title">
+                    <h3 class="heading-1 --medium">
+                      <?php echo $p->post_title; ?>
+                    </h3>
+                                      </div>
+                                      <div class="primary-screen__description heading-5">
+                                          <?php //the_content();
+                                          ?>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+                                      <div class="primary-screen__icon default-icon">
+                                          <img src="<?php echo wp_get_attachment_url($product->get_image_id(), 'full'); ?>"
+                                               alt=""/>
+                                      </div>
+                                  </div>
+                                  <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+                                      <div class="primary-screen__details d-flex align-middle">
+                                          <?php echo woocommerce_quantity_input();?>
+<!--                                            <div class="product-item-spinner">-->
+<!--                                                <button class="product-item-spinner__btn --minus" data-product_id="">--->
+<!--                                                </button>-->
+<!--                                                <input type="text" class="product-item-spinner__input" name=""-->
+<!--                                                       value="1"/>-->
+<!--                                                <button class="product-item-spinner__btn --plus" data-product_id="">+-->
+<!--                                                </button>-->
+<!--                                            </div>-->
+                                          <?php $regular_price = $product->regular_price; ?>
+                                          <div class="primary-screen__new-price --new-price"><?php echo $product->price . ' грн'; ?></div>
+                                          <div class="primary-screen__old-price --old-price"><?= $regular_price . ' грн'; ?></div>
+                                          <?php if (!empty($regular_price)): ?>
+                                              <?php $percentage = round(100 - ($product->price/$product->regular_price   * 100), 1) . '%'; ?>
+                                              <div class="product-price__discount --percent"><?php echo $percentage; ?></div>
+                                          <?php endif; ?>
+                                      </div>
+                                      <input type='hidden' name='product_id'
+                                             value='<?php echo esc_attr($post->ID); ?>'/>
+                                      <input type='hidden' name='add-to-cart'
+                                             value='<?php echo esc_attr($post->ID); ?>'/>
+                                      <div class="primary-screen__add">
+                                          <button type="submit" class="btn btn-primary"><?php pll_e('Додати в кошик');?></button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </form>
+                  </div>
+
+              <?php endforeach; ?>
+              <?php wp_reset_postdata(); ?>
+          <?php endif; ?>
+      </div>
+      <div class="primary-screen__background"></div>
+  </section>

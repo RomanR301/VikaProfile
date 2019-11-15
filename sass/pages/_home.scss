@@ -49,14 +49,6 @@
   &__add {
     padding-top: 32px;
   }
-  &__background {
-    // background: $blueColor;
-    // width: 33%;
-    // height: 100%;
-    // position: absolute;
-    // right: 0;
-    // top: 0;
-  }
   &__icon {
     position: absolute;
     top: 40px;
@@ -104,6 +96,10 @@
         height: unset;
         display: flex;
         flex-direction: column-reverse;
+        & form {
+          display: flex;
+          flex-direction: column-reverse;
+        }
       }
     }
     &__title {

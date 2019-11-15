@@ -3515,6 +3515,10 @@ input[type="search"]::-webkit-search-results-decoration {
     display: flex;
     flex-direction: column-reverse;
   }
+  .primary-screen-carousel__item form {
+    display: flex;
+    flex-direction: column-reverse;
+  }
   .primary-screen__title {
     text-align: center;
     font-size: 24px;
