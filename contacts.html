@@ -1,95 +1,380 @@
 <!DOCTYPE html>
 <html lang="uk">
-	<head>
-		<meta charset="utf-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="format-detection" content="telephone=no" />
-		<title>Vika Profile</title>
-		<meta name="description" content="" />
-		<link href="css/main.css" rel="stylesheet" />
-	</head>
-	<body>
-		<header class="header"></header>
-		<div class="body-padding"></div>
-		<section class="contacts">
-			<div class="container">
-				<div class="row">
-					<div class="contacts-heading heading-2">
-						Контакти
-					</div>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="format-detection" content="telephone=no" />
+	<title>Vika Profile</title>
+	<meta name="description" content="" />
+	<link href="css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+	<header class="header">
+		<div class="header-top">
+			<div class="container d-flex align-justify">
+				<div class="header-top-logo">
+					<a href="#">ВІКА-ПРОФІЛЬ</a>
 				</div>
-				<div class="row m-row">
-					<div class="column contacts-column col-xl-2 col-md-3 col-xs-12">
-						<div class="contacts-email">
-							<div class="contacts-column__heading heading-6">
-								Email
-							</div>
-							<div class="contacts-content">
-								<a href="mailto:info@vikaprofil.com">info@vikaprofil.com</a>
-							</div>
-						</div>
-					</div>
-					<div class="column contacts-column col-xl-2 col-md-3 col-xs-12">
-						<div class="contacts-phone">
-							<div class="contacts-column__heading heading-6">Телефон</div>
-							<div class="contacts-content">
-								<a href="tel:+380975837373">+38 (097) 583 73 73</a>
-								<a href="tel:+380939909464">+38 (093) 990 94 64</a>
-							</div>
-						</div>
-					</div>
-					<div class="column contacts-column col-xl-4 col-md-6 col-xs-12">
-						<div class="contacts-location">
-							<div class="contacts-column__heading heading-6">
-								Локація
-							</div>
-							<div class="contacts-content">
-								Львська обл., с. Малехів, вул. Київська 7, (район Галицького Перехрестя),
-								<span class="contacts-helper">Позаду заправки “SOKAR”</span>
-							</div>
-						</div>
-					</div>
-					<div class="column contacts-column col-xl-4 col-md-12 col-xs-12">
-						<div class="contacts-form">
-							<form action="">
-								<div class="contacts-form-box">
-									<div class="contacts-form__heading heading-3 --medium">
-										Контактна форма
-									</div>
-									<div class="form-group">
-										<input type="text" name="contacts-name" class="form-input" placeholder="Ваше ім’я" />
-									</div>
-									<div class="form-group">
-										<input type="email" name="contacts-email" class="form-input" placeholder="Ваш email" />
-									</div>
-									<div class="form-group">
-										<textarea name="contacts-message" class="form-textarea" cols="30" rows="10" placeholder="Ваше повідомлення"></textarea>
-									</div>
-									<div class="form-group">
-										<input type="submit" class="form-submit btn btn-primary" value="Відправити повідомлення" />
-									</div>
+				<div class="header-column">
+					<div class="navbar">
+						<nav class="primary-navigation">
+							<div class="menu-primary">
+								<ul class="menu d-flex">
+									<li class="menu-item"><a href="home.html">Про нас</a></li>
+									<li class="menu-item current-menu-item"><a href="categories.html">Каталог</a></li>
+									<li class="menu-item"><a href="terms-of-delivery.html">Оплата та доставка</a></li>
+									<li class="menu-item"><a href="news.html">Новини</a></li>
+									<li class="menu-item"><a href="contacts.html">Контакти</a></li>
+								</ul>
+								<div class="header-lang --mobile">
+									<ul class="header-lang-list">
+										<li class="header-lang-list__item">
+											<a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
+										</li>
+										<li class="lang-toggle ua"></li>
+										<li class="header-lang-list__item">
+											<a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
+										</li>
+									</ul>
 								</div>
-							</form>
+								<ul class="menu-mobile">
+									<li class="menu-mobile__item">
+										<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>380 (93) 225 43
+											52</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="tel:+380973355211"><i class="icon-contacts-phone"></i>38 (097) 335 52
+											11</a>
+									</li>
+									<li class="menu-mobile__item">
+										<a href="mailto:info@vikaprofile.com"> <i
+												class="icon-contacts-email"></i>info@vikaprofile.com</a>
+									</li>
+									<li class="menu-mobile__item">
+										<span><i class="icon-clock"></i>Пн. - Пт. з 08:00 - 20:00</span>
+									</li>
+									<li class="menu-mobile__item">
+										<button class="btn btn-primary modalTrigger"
+											data-modal="#callback-modal">Замовити дзвінок</button>
+									</li>
+								</ul>
+							</div>
+						</nav>
+					</div>
+					<div class="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+				<div class="header-column">
+					<div class="header-lang">
+						<ul class="header-lang-list">
+							<li class="header-lang-list__item">
+								<a lang="uk" class="ru" hreflang="uk" href="#RU">Рус</a>
+							</li>
+							<li class="lang-toggle ua"></li>
+							<li class="header-lang-list__item">
+								<a lang="ru-RU" class="ua" hreflang="ru-RU" href="#UA">Укр</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-primary">
+			<div class="container d-flex align-justify align-middle">
+				<div class="header-column">
+					<div class="header-logo d-flex flex-column">
+						<div class="header-logo__container">
+							<a href="#"><span>ВІКА</span>-ПРОФІЛЬ</a>
+						</div>
+						<div class="company-description">
+							<span>Виробництво профілю та комплектуючих</span>
+							<span>для гіпсокартонних систем</span>
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row">
+				<div class="header-column">
+					<div class="header-search">
+						<form action="" method="post" class="search">
+							<input class="header-search-input" type="search" name="search" placeholder="Пошук" />
+							<button class="header-search-btn" type="submit">
+								<i class="icon-search"><img src="/img/search.svg" alt="" /></i>
+							</button>
+						</form>
+					</div>
+				</div>
+				<div class="header-column">
+					<div class="header-phone">
+						<div class="header-phone__image">
+							<i class="icon-main-phone"></i>
+						</div>
+						<div class="header-phone__info">
+							<div class="phone-number">
+								38 (093) 335 35 35
+							</div>
+							<div class="phone-schedule">
+								Пн. - Пт. з 08:00 - 20:00
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-column">
+					<div class="header-contact-us">
+						<button class="btn btn-primary modalTrigger" data-modal="#callback-modal">Замовити
+							дзвінок</button>
+					</div>
+				</div>
+				<div class="header-column">
+					<div class="header-cart">
+						<a href="#"> <i class="icon-cart"></i></a>
+						<div class="cart-badge">
+							<span>8</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="container">
+				<div class="row header-lines">
+					<div class="col-lg-2 col-xs-7">
+						<div class="header-column">
+							<div class="categories-dropdown">
+								<div class="categories-hamburger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+								<div class="categories-text">
+									<a href="#">Усі категорії</a>
+								</div>
+								<div class="categories-container">
+									<ul class="categories-nav">
+										<li>
+											<div class="categories-nav__item_hamburger">
+												<div class="categories-hamburger">
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="categories-nav__item_heading">
+												<a href="#">Усі категорії</a>
+											</div>
+										</li>
+
+										<li class="categories-nav__item"><a href="#">Звукоізоляційні матеріали</a></li>
+										<li class="categories-nav__item"><a href="#">Герметики</a></li>
+										<li class="categories-nav__item"><a href="#">Клеї для плитки</a></li>
+										<li class="categories-nav__item"><a href="#">Герметики</a></li>
+										<li class="categories-nav__item"><a href="#">Штукатурка</a></li>
+										<li class="categories-nav__item"><a href="#">Шпаклівка</a></li>
+										<li class="categories-nav__item"><a href="#">Монтажна піна</a></li>
+										<li class="categories-nav__item">
+											<a href="#">Акції<span class="nav-sale">sale</span></a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-10 col-xs-5">
+						<div class="header-column">
+							<div class="categories-navigation">
+								<div class="menu-categories">
+									<ul class="menu">
+										<li class="menu-item"><a href="#">Акції</a><span class="nav-sale">sale</span>
+										</li>
+										<li class="menu-item"><a href="#">Звукоізоляційні матеріали</a></li>
+										<li class="menu-item"><a href="#">Герметики</a></li>
+										<li class="menu-item"><a href="#">Клеї для плитки</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="body-padding"></div>
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="contacts-heading heading-2">
+					Контакти
+				</div>
+			</div>
+			<div class="row m-row">
+				<div class="column contacts-column col-xl-2 col-md-3 col-xs-12">
+					<div class="contacts-email">
+						<div class="contacts-column__heading heading-6">
+							Email
+						</div>
+						<div class="contacts-content">
+							<a href="mailto:info@vikaprofil.com">info@vikaprofil.com</a>
+						</div>
+					</div>
+				</div>
+				<div class="column contacts-column col-xl-2 col-md-3 col-xs-12">
+					<div class="contacts-phone">
+						<div class="contacts-column__heading heading-6">Телефон</div>
+						<div class="contacts-content">
+							<a href="tel:+380975837373">+38 (097) 583 73 73</a>
+							<a href="tel:+380939909464">+38 (093) 990 94 64</a>
+						</div>
+					</div>
+				</div>
+				<div class="column contacts-column col-xl-4 col-md-6 col-xs-12">
+					<div class="contacts-location">
+						<div class="contacts-column__heading heading-6">
+							Локація
+						</div>
+						<div class="contacts-content">
+							Львська обл., с. Малехів, вул. Київська 7, (район Галицького Перехрестя),
+							<span class="contacts-helper">Позаду заправки “SOKAR”</span>
+						</div>
+					</div>
+				</div>
+				<div class="column contacts-column col-xl-4 col-md-12 col-xs-12">
+					<div class="contacts-form">
+						<form action="">
+							<div class="contacts-form-box">
+								<div class="contacts-form__heading heading-3 --medium">
+									Контактна форма
+								</div>
+								<div class="form-group">
+									<input type="text" name="contacts-name" class="form-input"
+										placeholder="Ваше ім’я" />
+								</div>
+								<div class="form-group">
+									<input type="email" name="contacts-email" class="form-input"
+										placeholder="Ваш email" />
+								</div>
+								<div class="form-group">
+									<textarea name="contacts-message" class="form-textarea" cols="30" rows="10"
+										placeholder="Ваше повідомлення"></textarea>
+								</div>
+								<div class="form-group">
+									<input type="submit" class="form-submit btn btn-primary"
+										value="Відправити повідомлення" />
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="row">
 					<div class="column col-md-4">
 
 					</div>
 				</div> -->
-				<div class="row">
-					<div class="contacts-map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5142.003235029376!2d24.0669773!3d49.8799962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add977d472ded%3A0x902214d16c6af0ee!2z0J_QnyDQktCa0KQg0JLRltC60LA!5e0!3m2!1sru!2sua!4v1572942687271!5m2!1sru!2sua" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+			<div class="row">
+				<div class="contacts-map"><iframe
+						src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5142.003235029376!2d24.0669773!3d49.8799962!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add977d472ded%3A0x902214d16c6af0ee!2z0J_QnyDQktCa0KQg0JLRltC60LA!5e0!3m2!1sru!2sua!4v1572942687271!5m2!1sru!2sua"
+						frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row d-flex align-justify">
+				<div class="footer-contacts">
+					<div class="footer-title heading-4">
+						Контакти
+					</div>
+					<ul class="footer-list">
+						<li class="footer-list__item">
+							<a href="tel:+380932254352"><i class="icon-contacts-phone"></i>+380 (93) 225 43 52</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="tel:+380973355211"> <i class="icon-contacts-phone"></i>+380 (97) 335 52 11</a>
+						</li>
+						<li class="footer-list__item">
+							<a href="mailto:info@vikaprofile.com"> <i
+									class="icon-contacts-email"></i>info@vikaprofile.com</a>
+						</li>
+						<li class="footer-list__item"><i class="icon-clock">Пн. - Пт. з 08:00 - 20:00</i></li>
+					</ul>
+				</div>
+				<div class="footer-information">
+					<div class="footer-title heading-4">
+						Інформація
+					</div>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="#">Про нас</a></li>
+						<li class="footer-list__item"><a href="#">Контакти</a></li>
+						<li class="footer-list__item"><a href="#">Блог</a></li>
+						<li class="footer-list__item"><a href="#">FAQ</a></li>
+						<li class="footer-list__item"><a href="#">Галерея</a></li>
+						<li class="footer-list__item"><a href="#">Оплата та доставка</a></li>
+					</ul>
+				</div>
+				<div class="footer-catalog">
+					<div class="footer-title heading-4">
+						Каталог
+					</div>
+					<ul class="footer-list">
+						<li class="footer-list__item"><a href="#">Акції</a></li>
+						<li class="footer-list__item"><a href="#">Звукоізоляційні матеріали</a></li>
+						<li class="footer-list__item"><a href="#">Герметики</a></li>
+						<li class="footer-list__item"><a href="#">Клеї для плитки</a></li>
+					</ul>
+				</div>
+				<div class="footer-subscribe">
+					<div class="footer-title heading-4">
+						Підписка
+					</div>
+					<div class="footer-subtitle heading-6">
+						Підписавшись на розсилку, Ви завжди будете отримувати інформацію про акції та новини
+					</div>
+					<div class="footer-form">
+						<form action="">
+							<input type="email" class="footer-subscribe__input" name="subscribe-email" id=""
+								placeholder="Ваш e-mail" />
+							<input type="submit" class="footer-subscribe__submit" value="" />
+						</form>
+					</div>
+					<div class="footer-title heading-4">
+						Соціальні мережі
+					</div>
+					<div class="footer-socials">
+						<ul class="footer-socials-list d-flex align-middle">
+							<li class="footer-socials-list__item d-flex align-middle">
+								<a href="#"><i class="icon-instagram"></i>Instagram</a>
+							</li>
+							<li class="footer-socials-list__item d-flex align-middle">
+								<a href="#"><i class="icon-facebook"></i>Facebook</a>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</section>
+			<div class="row">
+				<div class="footer-copyright d-flex align-justify">
+					<div class="footer-column">
+						© Віка-профіль, 2019
+					</div>
+					<div class="footer-column">
+						<a href="#">Дизайн та розробка — <b>LETARGET</b></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 
-		<footer class="footer"></footer>
+	<script src="js/libs/jquery-3.4.1.js"></script>
+	<script src="js/libs/flickity.pkgd.min.js"></script>
+	<script src="js/sliders.js"></script>
+	<script src="js/js-vikaprofile.js"></script>
+</body>
 
-		<script src="js/libs/jquery-3.4.1.js"></script>
-		<script src="js/libs/flickity.pkgd.min.js"></script>
-		<script src="js/sliders.js"></script>
-		<script src="js/js-vikaprofile.js"></script>
-	</body>
 </html>

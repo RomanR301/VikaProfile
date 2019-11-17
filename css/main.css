@@ -2431,6 +2431,10 @@ input[type="search"]::-webkit-search-results-decoration {
   padding-bottom: 40px;
 }
 
+.footer-form .mc4wp-response {
+  padding-top: 10px;
+}
+
 .footer-subtitle {
   padding-bottom: 16px;
 }
@@ -2813,7 +2817,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .header .categories-nav .categories-hamburger {
   top: 17px;
-  left: 0;
+  right: 17px;
 }
 
 .header .categories-nav .categories-nav__item_heading {
